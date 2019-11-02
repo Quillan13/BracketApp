@@ -3,6 +3,7 @@ import Bracket from '../types/Bracket';
 import BracketMatch from '../types/BracketMatch';
 import BracketParticipant from '../types/BracketParticipant';
 
+
 export default class BracketGenerator {
 	private NumberOfParticipants: number;
 	private Participants: BracketParticipant[];
@@ -43,7 +44,10 @@ export default class BracketGenerator {
 		};
 	}
 
-	static ConvertBracketToGame(bracket: Bracket): Game {}
+	//TO-DO Fix
+	static ConvertBracketToGame(bracket: Bracket): BracketParticipant{
+		return ;
+	}
 
 	private ConvertMatchesToRootMatch() {
 		let match: BracketMatch;
