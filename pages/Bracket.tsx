@@ -1,5 +1,7 @@
 import React from "react";
-import BracketView from "../components/BracketView";
+import dynamic from "next/dynamic";
+
+const BracketView = dynamic(() => import("../components/BracketView"), { ssr: false });
 
 const Bracket = () => {
     return (
