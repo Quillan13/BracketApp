@@ -24,6 +24,7 @@ const NodeLabelComponent: React.FC<any> = ({ nodeData }) => {
     return (
         nodeData && (
             <div>
+                Dade
                 {match.FirstParticipant && <div>{match.FirstParticipant.name}</div>}
                 {match.SecondParticipant && <div>{match.SecondParticipant.name}</div>}
             </div>
@@ -41,6 +42,7 @@ const BracketView = () => {
 
     return (
         <Tree
+            zoom={0.5}
             data={bracket.RootMatch}
             pathFunc="elbow"
             nodeSvgShape={{
