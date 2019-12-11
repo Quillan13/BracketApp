@@ -56,12 +56,16 @@ const Bracket = () => {
                     <MenuItem value={8}>8</MenuItem>
                     <MenuItem value={16}>16</MenuItem>
                     <MenuItem value={32}>32</MenuItem>
+                    <MenuItem value={64}>64</MenuItem>
+                    <MenuItem value={128}>128</MenuItem>
                 </Select>
             </FormControl>
             {bracketSize == 4 && <Select4></Select4>}
             {bracketSize == 8 && <Select8></Select8>}
             {bracketSize == 16 && <Select16></Select16>}
             {bracketSize == 32 && <Select32></Select32>}
+            {/* {bracketSize == 64 && <Select64></Select64>}
+            {bracketSize == 128 && <Select128></Select128>} */}
         </>
     );
 };
