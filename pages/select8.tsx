@@ -22,7 +22,7 @@ const Select8 = () => {
                     <div className="round">
                         <div className="group">
                             <div className="group-team group-team-top">Team 1</div>
-                            <div className="group-team group-team-divider"></div>
+                            <div className="group-team group-team-divider-semi-final"></div>
                             <div className="group-team group-team-bottom">Team 4</div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const Select8 = () => {
                     <div className="round">
                         <div className="group">
                             <div className="group-team group-team-top">Team 5</div>
-                            <div className="group-team group-team-divider-bracket-right"></div>
+                            <div className="group-team group-team-divider-semi-final-right"></div>
                             <div className="group-team group-team-bottom">Team 7</div>
                         </div>
                     </div>

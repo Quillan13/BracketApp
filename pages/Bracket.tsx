@@ -9,12 +9,14 @@ import createStyles from "../material-ui/src/styles/createStyles";
 import Select4 from "./select4";
 import Select8 from "./select8";
 import Select16 from "./select16";
+import Select32 from "./select32";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         formControl: {
             margin: theme.spacing(1),
-            minWidth: 120
+            //Keep the Drop Down From Getting Clustered
+            minWidth: 200
         },
         selectEmpty: {
             marginTop: theme.spacing(2)
@@ -59,6 +61,7 @@ const Bracket = () => {
             {bracketSize == 4 && <Select4></Select4>}
             {bracketSize == 8 && <Select8></Select8>}
             {bracketSize == 16 && <Select16></Select16>}
+            {bracketSize == 32 && <Select32></Select32>}
         </>
     );
 };
