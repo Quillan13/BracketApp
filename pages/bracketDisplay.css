@@ -62,13 +62,13 @@
 }
 
 .group-team-divider {
-    flex-grow: 1;
+    flex-grow: 0.5;
     min-height: 50px;
     border-right: 1px solid black;
 }
 .group-team-divider-bracket-right {
     border-right: 0;
-    flex-grow: 1;
+    flex-grow: 0.5;
     min-height: 50px;
     border-left: 1px solid black;
 }

@@ -8,6 +8,7 @@ import makeStyles from "../material-ui/src/styles/makeStyles";
 import createStyles from "../material-ui/src/styles/createStyles";
 import Select4 from "./select4";
 import Select8 from "./select8";
+import Select16 from "./select16";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -57,6 +58,7 @@ const Bracket = () => {
             </FormControl>
             {bracketSize == 4 && <Select4></Select4>}
             {bracketSize == 8 && <Select8></Select8>}
+            {bracketSize == 16 && <Select16></Select16>}
         </>
     );
 };
