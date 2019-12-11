@@ -74,6 +74,7 @@
     border-left: 1px solid black;
 }
 
+/* These are for the semi final brackets for some reason they were more like flex-grow .75 with the other formatting */
 .group-team-divider-semi-final{
     flex-grow: 1;
     min-height: 50px;
