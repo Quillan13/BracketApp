@@ -1,6 +1,12 @@
 .bracket {
     display: flex;
-    padding: 50px;
+    /* change padding if the bracket runs into the drop down */
+    padding: 0px;
+    margin: auto;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 .bracket-left,

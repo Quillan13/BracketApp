@@ -1,6 +1,4 @@
 import React from "react";
-import dynamic from "next/dynamic";
-import Grid from "@material-ui/core/Grid";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
@@ -8,10 +6,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import createMuiTheme, { Theme } from "../material-ui/src/styles/createMuiTheme";
 import makeStyles from "../material-ui/src/styles/makeStyles";
 import createStyles from "../material-ui/src/styles/createStyles";
-import Link from "next/link";
+import Select4 from "./select4";
 import Select8 from "./select8";
 
-//const BracketView = dynamic(() => import("../components/BracketView"), { ssr: false });
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         formControl: {
@@ -58,6 +55,7 @@ const Bracket = () => {
                     <MenuItem value={32}>32</MenuItem>
                 </Select>
             </FormControl>
+            {bracketSize == 4 && <Select4></Select4>}
             {bracketSize == 8 && <Select8></Select8>}
         </>
     );

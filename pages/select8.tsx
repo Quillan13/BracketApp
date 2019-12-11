@@ -1,4 +1,4 @@
-import "./bracket.css";
+import "./bracketDisplay.css";
 import React from "react";
 
 const Select8 = () => {
