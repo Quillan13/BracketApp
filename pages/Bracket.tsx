@@ -9,7 +9,7 @@ import createMuiTheme, { Theme } from "../material-ui/src/styles/createMuiTheme"
 import makeStyles from "../material-ui/src/styles/makeStyles";
 import createStyles from "../material-ui/src/styles/createStyles";
 import Link from "next/link";
-import TestB from "./TestB";
+import Select8 from "./select8";
 
 //const BracketView = dynamic(() => import("../components/BracketView"), { ssr: false });
 const useStyles = makeStyles((theme: Theme) =>
@@ -53,17 +53,13 @@ const Bracket = () => {
                         <em>None</em>
                     </MenuItem>
                     <MenuItem value={4}>4</MenuItem>
-                    {/* <Link href="/TestB" passHref> */}
-                    <MenuItem value={8}>
-                        8<TestB></TestB>
-                    </MenuItem>
-                    {/* </Link> */}
+                    <MenuItem value={8}>8</MenuItem>
                     <MenuItem value={16}>16</MenuItem>
                     <MenuItem value={32}>32</MenuItem>
                 </Select>
             </FormControl>
+            {bracketSize == 8 && <Select8></Select8>}
         </>
-        // {/* <TestB></TestB> */}
     );
 };
 

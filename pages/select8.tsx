@@ -1,7 +1,7 @@
-import "./testB.css";
+import "./bracket.css";
 import React from "react";
 
-const TestB = () => {
+const Select8 = () => {
     return (
         <>
             <div className="bracket">
@@ -46,7 +46,7 @@ const TestB = () => {
                     <div className="round">
                         <div className="group">
                             <div className="group-team group-team-top">Team 5</div>
-                            <div className="group-team group-team-divider"></div>
+                            <div className="group-team group-team-divider-bracket-right"></div>
                             <div className="group-team group-team-bottom">Team 7</div>
                         </div>
                     </div>
@@ -54,12 +54,12 @@ const TestB = () => {
                     <div className="round">
                         <div className="group">
                             <div className="group-team group-team-top">Team 5</div>
-                            <div className="group-team group-team-divider"></div>
+                            <div className="group-team group-team-divider-bracket-right"></div>
                             <div className="group-team group-team-bottom">Team 6</div>
                         </div>
                         <div className="group">
                             <div className="group-team group-team-top">Team 7</div>
-                            <div className="group-team group-team-divider"></div>
+                            <div className="group-team group-team-divider-bracket-right"></div>
                             <div className="group-team group-team-bottom">Team 8</div>
                         </div>
                     </div>
@@ -69,4 +69,4 @@ const TestB = () => {
     );
 };
 
-export default TestB;
+export default Select8;
