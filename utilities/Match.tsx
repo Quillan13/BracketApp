@@ -1,7 +1,7 @@
 import "../styles/bracketDisplay.css";
 import React from "react";
 
-const Round: React.FC<RoundProps> = ({ direction, team1, team2 }) => {
+const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     if (direction === "left") {
         return (
             <div className="group">
@@ -21,9 +21,9 @@ const Round: React.FC<RoundProps> = ({ direction, team1, team2 }) => {
     }
     return null;
 };
-interface RoundProps {
+interface MatchProps {
     direction: string;
     team1: string;
     team2: string;
 }
-export default Round;
+export default Match;
