@@ -1,198 +1,71 @@
-import '../styles/bracketDisplay.css';
-import React from 'react';
+import "../styles/bracketDisplay.css";
+import React from "react";
+import Match from "../utilities/Match";
+import SemiFinal from "../utilities/SemiFinal";
+import Championship from "../utilities/Championship";
 
 const Select32 = () => {
-	return (
-		<>
-			<div className="bracket-left">
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 2</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 3</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 4</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 5</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 6</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 7</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 8</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 9</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 10</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 11</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 12</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 13</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 14</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 15</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 16</div>
-					</div>
-				</div>
+    return (
+        <>
+            <div className="bracket-left">
+                <div className="round">
+                    <Match direction="left" team1="Team 1" team2="Team 2"></Match>
+                    <Match direction="left" team1="Team 3" team2="Team 4"></Match>
+                    <Match direction="left" team1="Team 5" team2="Team 6"></Match>
+                    <Match direction="left" team1="Team 7" team2="Team 8"></Match>
+                    <Match direction="left" team1="Team 9" team2="Team 10"></Match>
+                    <Match direction="left" team1="Team 11" team2="Team 12"></Match>
+                    <Match direction="left" team1="Team 13" team2="Team 14"></Match>
+                    <Match direction="left" team1="Team 15" team2="Team 16"></Match>
+                </div>
 
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 3</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 5</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 8</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 10</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 11</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 14</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 16</div>
-					</div>
-				</div>
+                <div className="round">
+                    <Match direction="left" team1="Team 1" team2="Team 3"></Match>
+                    <Match direction="left" team1="Team 5" team2="Team 8"></Match>
+                    <Match direction="left" team1="Team 10" team2="Team 11"></Match>
+                    <Match direction="left" team1="Team 14" team2="Team 16"></Match>
+                </div>
 
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 8</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 11</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 14</div>
-					</div>
-				</div>
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-						<div className="group-team group-team-divider-semi-final"></div>
-						<div className="group-team group-team-bottom">Team 11</div>
-					</div>
-				</div>
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-					</div>
-				</div>
-			</div>
+                <div className="round">
+                    <Match direction="left" team1="Team 1" team2="Team 8"></Match>
+                    <Match direction="left" team1="Team 11" team2="Team 14"></Match>
+                </div>
 
-			<div className="bracket-center">Championship</div>
+                <SemiFinal direction="left" team1="Team 1" team2="Team 14"></SemiFinal>
 
-			<div className="bracket-right">
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 27</div>
-					</div>
-				</div>
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 17</div>
-						<div className="group-team group-team-divider-semi-final-right"></div>
-						<div className="group-team group-team-bottom">Team 27</div>
-					</div>
-				</div>
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 17</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 21</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 27</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 30</div>
-					</div>
-				</div>
+                <Championship team1="Team 1"></Championship>
+            </div>
 
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 17</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 19</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 21</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 24</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 26</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 27</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 30</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 32</div>
-					</div>
-				</div>
+            <div className="bracket-center">Championship</div>
 
-				<div className="round">
-					<div className="group">
-						<div className="group-team group-team-top">Team 17</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 18</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 19</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 20</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 21</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 22</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 23</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 24</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 25</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 26</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 27</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 28</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 29</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 30</div>
-					</div>
-					<div className="group">
-						<div className="group-team group-team-top">Team 31</div>
-						<div className="group-team group-team-divider-bracket-right"></div>
-						<div className="group-team group-team-bottom">Team 32</div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+            <div className="bracket-right">
+                <Championship team1="Team 32"></Championship>
+
+                <SemiFinal direction="right" team1="Team 21" team2="Team 32"></SemiFinal>
+
+                <div className="round">
+                    <Match direction="right" team1="Team 17" team2="Team 21"></Match>
+                    <Match direction="right" team1="Team 27" team2="Team 32"></Match>
+                </div>
+                <div className="round">
+                    <Match direction="right" team1="Team 17" team2="Team 19"></Match>
+                    <Match direction="right" team1="Team 21" team2="Team 24"></Match>
+                    <Match direction="right" team1="Team 26" team2="Team 27"></Match>
+                    <Match direction="right" team1="Team 30" team2="Team 32"></Match>
+                </div>
+                <div className="round">
+                    <Match direction="right" team1="Team 17" team2="Team 18"></Match>
+                    <Match direction="right" team1="Team 19" team2="Team 20"></Match>
+                    <Match direction="right" team1="Team 21" team2="Team 22"></Match>
+                    <Match direction="right" team1="Team 23" team2="Team 24"></Match>
+                    <Match direction="right" team1="Team 25" team2="Team 26"></Match>
+                    <Match direction="right" team1="Team 27" team2="Team 28"></Match>
+                    <Match direction="right" team1="Team 29" team2="Team 30"></Match>
+                    <Match direction="right" team1="Team 31" team2="Team 32"></Match>
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Select32;

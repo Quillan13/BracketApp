@@ -1,7 +1,9 @@
+// This is dummy code to get app to compile
+
 import React from "react";
 import { Button } from "@material-ui/core";
 
-const Home = () => {
+const DisneyAnimatedMovies = () => {
     return (
         <>
             <Button href="/Bracket">Build a Bracket</Button>
@@ -11,4 +13,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default DisneyAnimatedMovies;
