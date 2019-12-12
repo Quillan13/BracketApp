@@ -4,7 +4,6 @@ import React from "react";
 const Select64 = () => {
     return (
         <>
-            <div className="bracket">
                 <div className="bracket-left">
                     <div className="round">
                         <div className="group">
@@ -357,7 +356,6 @@ const Select64 = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </>
     );
 };
