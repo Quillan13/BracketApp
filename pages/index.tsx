@@ -6,7 +6,7 @@ const Home = () => {
         <>
             <Button href="/Bracket">Build a Bracket</Button>
             <br />
-            {/* <Button href="Brackets/DisneyAnimatedMovies">Disney Animated Movies</Button> */}
+            <Button href="Brackets/DisneyAnimatedMovies">Disney Animated Movies</Button>
         </>
     );
 };
