@@ -1,6 +1,7 @@
 import "../styles/bracketDisplay.css";
-import Round1 from "../utilities/Round1";
 import React from "react";
+import Round1 from "../utilities/Round";
+import Championship from "../utilities/Championship";
 
 const Select4 = () => {
     return (
@@ -8,35 +9,18 @@ const Select4 = () => {
             <div className="bracket-left">
                 <div className="round">
                     <Round1 direction="left" team1="Team 1" team2="Team 2"></Round1>
-                    {/* <div className="group">
-						<div className="group-team group-team-top">Team 1</div>
-						<div className="group-team group-team-divider"></div>
-						<div className="group-team group-team-bottom">Team 2</div>
-					</div> */}
                 </div>
 
-                <div className="round">
-                    <div className="group">
-                        <div className="group-team group-team-top">Team 1</div>
-                    </div>
-                </div>
+                <Championship team1="Team 1"></Championship>
             </div>
 
             <div className="bracket-center">Championship</div>
 
             <div className="bracket-right">
-                <div className="round">
-                    <div className="group">
-                        <div className="group-team group-team-top">Team 4</div>
-                    </div>
-                </div>
+                <Championship team1="Team 4"></Championship>
 
                 <div className="round">
-                    <div className="group">
-                        <div className="group-team group-team-top">Team 3</div>
-                        <div className="group-team group-team-divider-bracket-right"></div>
-                        <div className="group-team group-team-bottom">Team 4</div>
-                    </div>
+                    <Round1 direction="right" team1="Team 3" team2="Team 4"></Round1>
                 </div>
             </div>
         </>
