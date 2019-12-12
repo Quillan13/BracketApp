@@ -1,897 +1,897 @@
 export default{
-	"Princesses": [{
-		"title": "Aladin",
-		"seed": 1,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+	Princesses: [{
+		title: "Aladin",
+		seed: 1,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Beauty and the Beast",
-		"seed": 2,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Beauty and the Beast",
+		seed: 2,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Moana",
-		"seed": 3,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Moana",
+		seed: 3,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Little Mermaid",
-		"seed": 4,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Little Mermaid",
+		seed: 4,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Tangled",
-		"seed": 5,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Tangled",
+		seed: 5,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Frozen",
-		"seed": 6,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Frozen",
+		seed: 6,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Mulan",
-		"seed": 7,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Mulan",
+		seed: 7,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Cinderella",
-		"seed": 8,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Cinderella",
+		seed: 8,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Sleeping Beauty",
-		"seed": 9,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Sleeping Beauty",
+		seed: 9,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Snow White",
-		"seed": 10,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Snow White",
+		seed: 10,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Brave",
-		"seed": 11,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Brave",
+		seed: 11,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Princess and the Frog",
-		"seed": 12,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Princess and the Frog",
+		seed: 12,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Pocahontas",
-		"seed": 13,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Pocahontas",
+		seed: 13,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Alice in Wonderland",
-		"seed": 14,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Alice in Wonderland",
+		seed: 14,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Tinker Bell",
-		"seed": 15,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Tinker Bell",
+		seed: 15,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}, {
-		"title": "Sofia: Once Upon a Princess",
-		"seed": 16,
-		"w": 0,
-		"l": 0,
-		"ratio": 0
+		title: "Sofia: Once Upon a Princess",
+		seed: 16,
+		w: 0,
+		l: 0,
+		ratio: 0
 	}],
 
 	"Pixar-ish": [{
-			"title": "Coco",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Coco",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Zootopia",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Zootopia",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Toy Story",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Toy Story",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Monsters",
-			"seed": "Inc",
-			"w": 4,
-			"l": 0,
-			"ratio": 0
+			title: "Monsters",
+			seed: "Inc",
+			w: 4,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Up",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Up",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Wall-E",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Wall-E",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Big Hero 6",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Big Hero 6",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Inside Out",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Inside Out",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Incredibles",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Incredibles",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Ratatouille",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Ratatouille",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Finding Nemo",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Finding Nemo",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Wreck-It Ralph",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Wreck-It Ralph",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Cars",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Cars",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Bolt",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Bolt",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Good Dinosaur",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Good Dinosaur",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Bugs Life",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Bugs Life",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"Sequals 1": [{
-			"title": "Toy Story 4",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Toy Story 4",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Toy Story 3",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Toy Story 3",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Toy Story 2",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Toy Story 2",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Finding Dory",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Finding Dory",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Incredibles 2",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Incredibles 2",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Monsters University",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Monsters University",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Cars 3",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Cars 3",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Ralph Breaks the Internet",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Ralph Breaks the Internet",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Cinderella 3",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Cinderella 3",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "King of Thieves",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "King of Thieves",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Cars 2",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Cars 2",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Little Mermaid 2",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Little Mermaid 2",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Mulan 2",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Mulan 2",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Return of Jafar",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Return of Jafar",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Cinderella 2",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Cinderella 2",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Pocahontas 2",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Pocahontas 2",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"Sequals 2": [{
-			"title": "Rescuers Down Under",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Rescuers Down Under",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lion King 1 1/2",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lion King 1 1/2",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lion King 2",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lion King 2",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Bambi 2",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Bambi 2",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lilo and Stitch 2",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lilo and Stitch 2",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Brother Bear 2",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Brother Bear 2",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lady and the Tramp 2",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lady and the Tramp 2",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Extremely Goofy Movie",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Extremely Goofy Movie",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Fox and the Hound 2",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Fox and the Hound 2",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "BLT to the Rescue",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "BLT to the Rescue",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "BLT Goes to Mars",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "BLT Goes to Mars",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Kronk's New Groove",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Kronk's New Groove",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "101 Dalamations 2",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "101 Dalamations 2",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Return to Neverland",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Return to Neverland",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Jungle Book 2",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Jungle Book 2",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Hunchback 2",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Hunchback 2",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"TV Movies": [{
-			"title": "Brave Little Toaster",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Brave Little Toaster",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Phineas & Ferb Movie",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Phineas & Ferb Movie",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tinker Bell: Secret of the Wings",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tinker Bell: Secret of the Wings",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tinker Bell and the Great Fairy Rescue",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tinker Bell and the Great Fairy Rescue",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Kim Possible So the Drama",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Kim Possible So the Drama",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tinker Bell and the Lost Treasure",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tinker Bell and the Lost Treasure",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Proud Family Movie",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Proud Family Movie",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Kim Possible Sitch in Time",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Kim Possible Sitch in Time",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Duck Tales The Movie",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Duck Tales The Movie",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tangled: Before Ever After",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tangled: Before Ever After",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Mickey's Once Upon a Christmas",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Mickey's Once Upon a Christmas",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Recess: School's Out",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Recess: School's Out",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Beauty and the Beast: The Enchanted Christmas",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Beauty and the Beast: The Enchanted Christmas",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Stitch! The Movie",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Stitch! The Movie",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Three Musketeers",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Three Musketeers",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Doug's 1st Movie",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Doug's 1st Movie",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"Early Years": [{
-			"title": "Jungle Book",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Jungle Book",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Peter Pan",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Peter Pan",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lady and the Tramp",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lady and the Tramp",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "101 Dalmatians",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "101 Dalmatians",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Sword in the Stone",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Sword in the Stone",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Pinocchio",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Pinocchio",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Bambi",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Bambi",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "chabod and Mr. Toad",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "chabod and Mr. Toad",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "AristoCats",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "AristoCats",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Reluctant Dragon",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Reluctant Dragon",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Dumbo",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Dumbo",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Three Caballeros",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Three Caballeros",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Fun & Fancy Free",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Fun & Fancy Free",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Melody Time",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Melody Time",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Saludos Amigos",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Saludos Amigos",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Make Mine Music",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Make Mine Music",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"Coming of Age": [{
-			"title": "Lion King",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lion King",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Nightmare Before Christmas",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Nightmare Before Christmas",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Many Adventures: Winnie the Pooh",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Many Adventures: Winnie the Pooh",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Robin Hood",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Robin Hood",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "The Great Mouse Detective",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "The Great Mouse Detective",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Fox and the Hound",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Fox and the Hound",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Hercules",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Hercules",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tarzan",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tarzan",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Fantasia 2000",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Fantasia 2000",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Goofy Movie",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Goofy Movie",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Hunchback of Notre Dame",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Hunchback of Notre Dame",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Rescuers",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Rescuers",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "James and the Giant Peach",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "James and the Giant Peach",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Oliver and Company",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Oliver and Company",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Pete's Dragon",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Pete's Dragon",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Black Cauldron",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Black Cauldron",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	],
 
 	"21st Century": [{
-			"title": "Emperor's New Groove",
-			"seed": 1,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Emperor's New Groove",
+			seed: 1,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Winnie the Pooh",
-			"seed": 2,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Winnie the Pooh",
+			seed: 2,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Lilo & Stitch",
-			"seed": 3,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Lilo & Stitch",
+			seed: 3,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Frankenweenie",
-			"seed": 4,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Frankenweenie",
+			seed: 4,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Treasure Planet",
-			"seed": 5,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Treasure Planet",
+			seed: 5,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Meet the Robinsons",
-			"seed": 6,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Meet the Robinsons",
+			seed: 6,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "The Pirate Fairy",
-			"seed": 7,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "The Pirate Fairy",
+			seed: 7,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Pooh's Heffalump Movie",
-			"seed": 8,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Pooh's Heffalump Movie",
+			seed: 8,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Brother Bear",
-			"seed": 9,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Brother Bear",
+			seed: 9,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Atlantis",
-			"seed": 10,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Atlantis",
+			seed: 10,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Tigger Movie",
-			"seed": 11,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Tigger Movie",
+			seed: 11,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Piglet's Big Movie",
-			"seed": 12,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Piglet's Big Movie",
+			seed: 12,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Planes",
-			"seed": 13,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Planes",
+			seed: 13,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Dinosaur",
-			"seed": 14,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Dinosaur",
+			seed: 14,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "Chicken Little",
-			"seed": 15,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "Chicken Little",
+			seed: 15,
+			w: 0,
+			l: 0,
+			ratio: 0
 		},
 		{
-			"title": "The Wild",
-			"seed": 16,
-			"w": 0,
-			"l": 0,
-			"ratio": 0
+			title: "The Wild",
+			seed: 16,
+			w: 0,
+			l: 0,
+			ratio: 0
 		}
 	]
 

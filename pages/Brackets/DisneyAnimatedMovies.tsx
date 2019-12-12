@@ -4,6 +4,7 @@ import Match from "../../utilities/Match";
 import SemiFinal from "../../utilities/SemiFinal";
 import Championship from "../../utilities/Championship";
 import { Grid, makeStyles, Theme, createStyles, createMuiTheme } from "../../material-ui/src";
+import Bracket from "../../data/DisneyAnimatedFilms";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -34,7 +35,7 @@ const DisneyAnimatedMovies = () => {
         <Grid container wrap="nowrap" className={classes.bracket}>
             <div className="bracket-left">
                 <div className="round">
-                    <Match direction="left" team1="Team 1" team2="Team 2"></Match>
+                    <Match direction="left" team1={Bracket.Princesses[].title} team2="Team 2"></Match>
                     <Match direction="left" team1="Team 3" team2="Team 4"></Match>
                     <Match direction="left" team1="Team 5" team2="Team 6"></Match>
                     <Match direction="left" team1="Team 7" team2="Team 8"></Match>
