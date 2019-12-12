@@ -10,6 +10,8 @@ import Select4 from "./select4";
 import Select8 from "./select8";
 import Select16 from "./select16";
 import Select32 from "./select32";
+import Select64 from "./select64";
+import Select128 from "./select128";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -64,8 +66,8 @@ const Bracket = () => {
             {bracketSize == 8 && <Select8></Select8>}
             {bracketSize == 16 && <Select16></Select16>}
             {bracketSize == 32 && <Select32></Select32>}
-            {/* {bracketSize == 64 && <Select64></Select64>}
-            {bracketSize == 128 && <Select128></Select128>} */}
+            {bracketSize == 64 && <Select64></Select64>}
+            {bracketSize == 128 && <Select128></Select128>}
         </>
     );
 };
