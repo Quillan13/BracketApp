@@ -37,12 +37,12 @@ const DisneyAnimatedMovies = () => {
                 <div className="round">
                     <Match direction="left" team1={Bracket.Princesses[0].title} team2={Bracket.Princesses[15].title}></Match>
                     <Match direction="left" team1={Bracket.Princesses[1].title} team2={Bracket.Princesses[14].title}></Match>
-                    <Match direction="left" team1={Bracket.Princesses[2].title} team2={Bracket.Princesses[13].title}></Match>                    <Match direction="left" team1="Team 7" team2="Team 8"></Match>
-                    <Match direction="left" team1={Bracket.Princesses[3].title} team2={Bracket.Princesses[12].title}></Match>                    <Match direction="left" team1="Team 11" team2="Team 12"></Match>
-                    <Match direction="left" team1={Bracket.Princesses[4].title} team2={Bracket.Princesses[11].title}></Match>                    <Match direction="left" team1="Team 15" team2="Team 16"></Match>
-                    <Match direction="left" team1={Bracket.Princesses[5].title} team2={Bracket.Princesses[10].title}></Match>                    <Match direction="left" team1="Team 19" team2="Team 20"></Match>
-                    <Match direction="left" team1={Bracket.Princesses[6].title} team2={Bracket.Princesses[9].title}></Match>                    <Match direction="left" team1="Team 23" team2="Team 24"></Match>
-                    <Match direction="left" team1={Bracket.Princesses[7].title} team2={Bracket.Princesses[8].title}></Match>                    <Match direction="left" team1="Team 27" team2="Team 28"></Match>
+                    <Match direction="left" team1={Bracket.Princesses[2].title} team2={Bracket.Princesses[13].title}></Match>
+                    <Match direction="left" team1={Bracket.Princesses[3].title} team2={Bracket.Princesses[12].title}></Match>
+                    <Match direction="left" team1={Bracket.Princesses[4].title} team2={Bracket.Princesses[11].title}></Match>
+                    <Match direction="left" team1={Bracket.Princesses[5].title} team2={Bracket.Princesses[10].title}></Match>
+                    <Match direction="left" team1={Bracket.Princesses[6].title} team2={Bracket.Princesses[9].title}></Match>
+                    <Match direction="left" team1={Bracket.Princesses[7].title} team2={Bracket.Princesses[8].title}></Match>
                     <Match direction="left" team1={Bracket.Pixarish[0].title} team2={Bracket.Pixarish[15].title}></Match>
                     <Match direction="left" team1={Bracket.Pixarish[1].title} team2={Bracket.Pixarish[14].title}></Match>
                     <Match direction="left" team1={Bracket.Pixarish[2].title} team2={Bracket.Pixarish[13].title}></Match>
@@ -67,7 +67,6 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="left" team1={Bracket.Sequals2[5].title} team2={Bracket.Sequals2[10].title}></Match>
                     <Match direction="left" team1={Bracket.Sequals2[6].title} team2={Bracket.Sequals2[9].title}></Match>
                     <Match direction="left" team1={Bracket.Sequals2[7].title} team2={Bracket.Sequals2[8].title}></Match>
-
                 </div>
 
                 <div className="round">
