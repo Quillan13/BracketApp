@@ -97,7 +97,7 @@ export default{
 		ratio: 0
 	}],
 
-	"Pixar-ish": [{
+	"Pixarish": [{
 			title: "Coco",
 			seed: 1,
 			w: 0,
@@ -211,7 +211,7 @@ export default{
 		}
 	],
 
-	"Sequals 1": [{
+	"Sequals1": [{
 			title: "Toy Story 4",
 			seed: 1,
 			w: 0,
@@ -325,7 +325,7 @@ export default{
 		}
 	],
 
-	"Sequals 2": [{
+	"Sequals2": [{
 			title: "Rescuers Down Under",
 			seed: 1,
 			w: 0,
@@ -439,7 +439,7 @@ export default{
 		}
 	],
 
-	"TV Movies": [{
+	"TVMovies": [{
 			title: "Brave Little Toaster",
 			seed: 1,
 			w: 0,
@@ -553,7 +553,7 @@ export default{
 		}
 	],
 
-	"Early Years": [{
+	"EarlyYears": [{
 			title: "Jungle Book",
 			seed: 1,
 			w: 0,
@@ -667,7 +667,7 @@ export default{
 		}
 	],
 
-	"Coming of Age": [{
+	"ComingofAge": [{
 			title: "Lion King",
 			seed: 1,
 			w: 0,
@@ -781,7 +781,7 @@ export default{
 		}
 	],
 
-	"21st Century": [{
+	"21stCentury": [{
 			title: "Emperor's New Groove",
 			seed: 1,
 			w: 0,
