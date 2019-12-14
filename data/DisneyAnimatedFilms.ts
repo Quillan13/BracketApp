@@ -119,9 +119,9 @@ export default{
 			ratio: 0
 		},
 		{
-			title: "Monsters",
-			seed: "Inc",
-			w: 4,
+			title: "Monsters Inc",
+			seed: 4,
+			w: 0,
 			l: 0,
 			ratio: 0
 		},

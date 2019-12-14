@@ -88,3 +88,7 @@ body {
     min-height: 50px;
     border-left: 1px solid black;
 }
+
+.team-button {
+    white-space: nowrap;
+}
