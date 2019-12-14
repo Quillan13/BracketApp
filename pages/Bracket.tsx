@@ -3,16 +3,13 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
-import createMuiTheme, { Theme } from "../material-ui/src/styles/createMuiTheme";
-import makeStyles from "../material-ui/src/styles/makeStyles";
-import createStyles from "../material-ui/src/styles/createStyles";
 import Select4 from "./select4";
 import Select8 from "./select8";
 import Select16 from "./select16";
 import Select32 from "./select32";
 import Select64 from "./select64";
 import Select128 from "./select128";
-import { Grid, Box } from "../material-ui/src";
+import { makeStyles, Theme, createStyles, createMuiTheme, Box, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
