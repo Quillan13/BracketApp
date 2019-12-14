@@ -1,6 +1,5 @@
 import "../styles/bracketDisplay.css";
 import React from "react";
-import { Button } from "@material-ui/core";
 
 const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     if (direction === "left") {
