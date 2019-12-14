@@ -3,8 +3,8 @@ import React from "react";
 import Match from "../../utilities/Match";
 import SemiFinal from "../../utilities/SemiFinal";
 import Championship from "../../utilities/Championship";
-import { Grid, makeStyles, Theme, createStyles, createMuiTheme } from "../../material-ui/src";
 import Bracket from "../../data/DisneyAnimatedFilms";
+import { makeStyles, Theme, createStyles, createMuiTheme, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
