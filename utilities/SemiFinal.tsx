@@ -6,9 +6,9 @@ const SemiFinal: React.FC<SemiFinalProps> = ({ direction, team1, team2 }) => {
         return (
             <div className="round">
                 <div className="group">
-                    <div className="group-team group-team-top">{team1}</div>
+                    <button className="group-team group-team-top team-button team-button">{team1}</button>
                     <div className="group-team group-team-divider-semi-final"></div>
-                    <div className="group-team group-team-bottom">{team2}</div>
+                    <button className="group-team group-team-bottom team-button team-button">{team2}</button>
                 </div>
             </div>
         );
@@ -16,9 +16,9 @@ const SemiFinal: React.FC<SemiFinalProps> = ({ direction, team1, team2 }) => {
         return (
             <div className="round">
                 <div className="group">
-                    <div className="group-team group-team-top">{team1}</div>
+                    <button className="group-team group-team-top team-button">{team1}</button>
                     <div className="group-team group-team-divider-semi-final-right"></div>
-                    <div className="group-team group-team-bottom">{team2}</div>
+                    <button className="group-team group-team-bottom team-button">{team2}</button>
                 </div>
             </div>
         );

@@ -1,5 +1,5 @@
 export default{
-	Princesses: [{
+	"Princesses": [{
 		title: "Aladin",
 		seed: 1,
 		w: 0,
@@ -781,7 +781,7 @@ export default{
 		}
 	],
 
-	"21stCentury": [{
+	"TFCentury": [{
 			title: "Emperor's New Groove",
 			seed: 1,
 			w: 0,

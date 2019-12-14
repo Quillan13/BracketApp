@@ -1,6 +1,5 @@
 import "../styles/bracketDisplay.css";
 import React from "react";
-import { Button } from "@material-ui/core";
 
 const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     if (direction === "left") {
@@ -14,9 +13,9 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     } else if (direction === "right") {
         return (
             <div className="group">
-                <button className="group-team group-team-top">{team1}</button>
+                <button className="group-team group-team-top team-button">{team1}</button>
                 <div className="group-team group-team-divider-bracket-right"></div>
-                <button className="group-team group-team-bottom">{team2}</button>
+                <button className="group-team group-team-bottom team-button">{team2}</button>
             </div>
         );
     }
