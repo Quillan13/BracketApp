@@ -6,19 +6,17 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     if (direction === "left") {
         return (
             <div className="group">
-                <p className="group-team group-team-top">
-                    <Button>{team1}</Button>
-                </p>
+                <button className="group-team group-team-top team-button">{team1}</button>
                 <div className="group-team group-team-divider"></div>
-                <div className="group-team group-team-bottom">{team2}</div>
+                <button className="group-team group-team-bottom team-button">{team2}</button>
             </div>
         );
     } else if (direction === "right") {
         return (
             <div className="group">
-                <div className="group-team group-team-top">{team1}</div>
+                <button className="group-team group-team-top">{team1}</button>
                 <div className="group-team group-team-divider-bracket-right"></div>
-                <div className="group-team group-team-bottom">{team2}</div>
+                <button className="group-team group-team-bottom">{team2}</button>
             </div>
         );
     }
