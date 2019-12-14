@@ -113,7 +113,7 @@ const DisneyAnimatedMovies = () => {
 
                 <SemiFinal direction="left" team1="" team2=""></SemiFinal>
 
-                <Championship team1=""></Championship>
+                <Championship team1="TEAM 1"></Championship>
             </div>
 
             <div className="bracket-center">Championship</div>
