@@ -30,17 +30,19 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const DisneyAnimatedMovies = () => {
-    // function handleClick1() {
-    //     setTop("green");
-    //     setBottom("red");
-    // }
-    // function handleClick2() {
-    //     setTop("red");
-    //     setBottom("green");
-    // }
+    function handleChamp1() {
+        setLeft("green");
+        setRight("red");
+    }
+
+    function handleChamp2() {
+        setLeft("red");
+        setRight("green");
+    }
 
     const classes = useStyles(createMuiTheme());
-    // const [top, setTop] = useState("default");
+    const [left, setLeft] = useState("default");
+    const [right, setRight] = useState("default");
     // const [bottom, setBottom] = useState("default");
 
     return (
@@ -125,13 +127,13 @@ const DisneyAnimatedMovies = () => {
 
                 <SemiFinal direction="left" team1="" team2=""></SemiFinal>
 
-                <Championship team1=""></Championship>
+                <Championship team1="" click={handleChamp1} color={left}></Championship>
             </div>
 
             <div className="bracket-center">Championship</div>
 
             <div className="bracket-right">
-                <Championship team1=""></Championship>
+                <Championship team1="" click={handleChamp2} color={right}></Championship>
 
                 <SemiFinal direction="right" team1="" team2=""></SemiFinal>
 
