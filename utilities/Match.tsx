@@ -2,12 +2,12 @@ import "../styles/bracketDisplay.css";
 import React, { useState } from "react";
 
 const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
-    function handleClick1() {
+    function clickTop() {
         setTop("green");
         setBottom("red");
         // winner = { team1 };
     }
-    function handleClick2() {
+    function clickBottom() {
         setTop("red");
         setBottom("green");
         // winner = { team2 };
@@ -18,11 +18,11 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     if (direction === "left") {
         return (
             <div className="group">
-                <button id="team1" onClick={handleClick1} className={"group-team group-team-top team-button " + top}>
+                <button id="team1" onClick={clickTop} className={"group-team group-team-top team-button " + top}>
                     {team1}
                 </button>
                 <div className="group-team group-team-divider"></div>
-                <button id="team2" onClick={handleClick2} className={"group-team group-team-bottom team-button " + bottom}>
+                <button id="team2" onClick={clickBottom} className={"group-team group-team-bottom team-button " + bottom}>
                     {team2}
                 </button>
             </div>
@@ -30,11 +30,11 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2 }) => {
     } else if (direction === "right") {
         return (
             <div className="group">
-                <button id="team1" onClick={handleClick1} className={"group-team group-team-top team-button " + top}>
+                <button id="team1" onClick={clickTop} className={"group-team group-team-top team-button " + top}>
                     {team1}
                 </button>
                 <div className="group-team group-team-divider-bracket-right"></div>
-                <button id="team2" onClick={handleClick2} className={"group-team group-team-bottom team-button " + bottom}>
+                <button id="team2" onClick={clickBottom} className={"group-team group-team-bottom team-button " + bottom}>
                     {team2}
                 </button>
             </div>
@@ -46,10 +46,6 @@ interface MatchProps {
     direction: string;
     team1: string;
     team2: string;
-    // clickTop: () => void;
-    // clickBottom: () => void;
-    // top: string;
-    // bottom: string;
     // winner: string;
 }
 export default Match;

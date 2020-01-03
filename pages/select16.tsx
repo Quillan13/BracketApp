@@ -1,10 +1,22 @@
 import "../styles/bracketDisplay.css";
-import React from "react";
+import React, { useState } from "react";
 import Match from "../utilities/Match";
 import SemiFinal from "../utilities/SemiFinal";
 import Championship from "../utilities/Championship";
 
 const Select16 = () => {
+    function handleChamp1() {
+        setLeft("green");
+        setRight("red");
+    }
+
+    function handleChamp2() {
+        setLeft("red");
+        setRight("green");
+    }
+    const [left, setLeft] = useState("default");
+    const [right, setRight] = useState("default");
+
     return (
         <>
             <div className="bracket-left">
@@ -22,13 +34,13 @@ const Select16 = () => {
 
                 <SemiFinal direction="left" team1="Team 1" team2="Team 6"></SemiFinal>
 
-                <Championship team1="Team 1"></Championship>
+                <Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
             </div>
 
             <div className="bracket-center">Championship</div>
 
             <div className="bracket-right">
-                <Championship team1="Team 15"></Championship>
+                <Championship team1="Team 2" click={handleChamp2} color={right}></Championship>
 
                 <SemiFinal direction="right" team1="Team 11" team2="Team 15"></SemiFinal>
 
