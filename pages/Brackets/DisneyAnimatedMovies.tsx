@@ -1,5 +1,5 @@
 import "../../styles/bracketDisplay.css";
-import React from "react";
+import React, { useState } from "react";
 import Match from "../../utilities/Match";
 import SemiFinal from "../../utilities/SemiFinal";
 import Championship from "../../utilities/Championship";
@@ -30,7 +30,19 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 
 const DisneyAnimatedMovies = () => {
+    // function handleClick1() {
+    //     setTop("green");
+    //     setBottom("red");
+    // }
+    // function handleClick2() {
+    //     setTop("red");
+    //     setBottom("green");
+    // }
+
     const classes = useStyles(createMuiTheme());
+    // const [top, setTop] = useState("default");
+    // const [bottom, setBottom] = useState("default");
+
     return (
         <Grid container wrap="nowrap" className={classes.bracket}>
             <div className="bracket-left">

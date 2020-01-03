@@ -92,3 +92,15 @@ body {
 .team-button {
     white-space: nowrap;
 }
+
+.default {
+    background-color: default;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
