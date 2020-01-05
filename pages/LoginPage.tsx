@@ -58,7 +58,6 @@ class LoginPage extends Component {
         return (
             <div className="row mt-5">  
                 <div className="col-md-12">
-                    <h2 className="text-left">Google Login Demo</h2>
                     <div className="card mt-3">
                         <div className="card-body">
                              
