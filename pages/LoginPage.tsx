@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/LoginPage.css";
+import Home from '.';
  
 class LoginPage extends Component {
     auth2: any;
@@ -22,12 +23,14 @@ class LoginPage extends Component {
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail());
- 
+
+        if(googleUser.isSignedIn()){
+            <Home></Home>
+        }
  
         }, (error) => {
             alert(JSON.stringify(error, undefined, 2));
         });
- 
     }
  
     googleSDK = () => {
@@ -58,10 +61,8 @@ class LoginPage extends Component {
         return (
             <div className="row mt-5">  
                 <div className="col-md-12">
-                    <h2 className="text-left">Google Login Demo</h2>
                     <div className="card mt-3">
                         <div className="card-body">
-                             
                             <div className="row mt-5 mb-5">
                                 <div className="col-md-4 mt-2 m-auto ">
                                     <button className="loginBtn loginBtn--google" ref="googleLoginBtn">
