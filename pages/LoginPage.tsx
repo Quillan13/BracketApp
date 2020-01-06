@@ -24,7 +24,7 @@ class LoginPage extends Component {
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail());
 
-        if(googleUser.isSignedIn.get()){
+        if(profile.isSignedIn()){
             return(
                 <Home></Home>
             )
