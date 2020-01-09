@@ -5,7 +5,6 @@ import SemiFinal from "../../utilities/SemiFinal";
 import Championship from "../../utilities/Championship";
 import Bracket from "../../data/DisneyAnimatedFilms";
 import { makeStyles, Theme, createStyles, createMuiTheme, Grid } from "@material-ui/core";
-
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         selectGrid: {
@@ -21,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
         formControl: {
             margin: theme.spacing(1),
             //Keep the Drop Down From Getting Clustered
-            minWidth: 200
+            minWidth: 150
         },
         selectEmpty: {
             marginTop: theme.spacing(2)
@@ -43,7 +42,6 @@ const DisneyAnimatedMovies = () => {
     const classes = useStyles(createMuiTheme());
     const [left, setLeft] = useState("default");
     const [right, setRight] = useState("default");
-    // const [bottom, setBottom] = useState("default");
 
     return (
         <Grid container wrap="nowrap" className={classes.bracket}>
@@ -82,7 +80,6 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="left" team1={Bracket.TVMovies[6].title} team2={Bracket.TVMovies[9].title}></Match>
                     <Match direction="left" team1={Bracket.TVMovies[7].title} team2={Bracket.TVMovies[8].title}></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
@@ -101,7 +98,6 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
@@ -112,14 +108,12 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="left" team1="" team2=""></Match>
                     <Match direction="left" team1="" team2=""></Match>
@@ -141,14 +135,12 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
@@ -159,7 +151,6 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
@@ -178,7 +169,6 @@ const DisneyAnimatedMovies = () => {
                     <Match direction="right" team1="" team2=""></Match>
                     <Match direction="right" team1="" team2=""></Match>
                 </div>
-
                 <div className="round">
                     <Match direction="right" team1={Bracket.ComingofAge[0].title} team2={Bracket.ComingofAge[15].title}></Match>
                     <Match direction="right" team1={Bracket.ComingofAge[1].title} team2={Bracket.ComingofAge[14].title}></Match>
@@ -217,5 +207,4 @@ const DisneyAnimatedMovies = () => {
         </Grid>
     );
 };
-
 export default DisneyAnimatedMovies;
