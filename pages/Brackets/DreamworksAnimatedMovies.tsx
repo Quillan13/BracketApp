@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
         formControl: {
             margin: theme.spacing(1),
             //Keep the Drop Down From Getting Clustered
-            minWidth: 200
+            minWidth: 150
         },
         selectEmpty: {
             marginTop: theme.spacing(2)
