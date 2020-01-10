@@ -603,7 +603,7 @@ export default{
 			ratio: 0
 		},
 		{
-			title: "chabod and Mr. Toad",
+			title: "Ichabod and Mr. Toad",
 			seed: 8,
 			w: 0,
 			l: 0,
