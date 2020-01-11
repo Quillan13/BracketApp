@@ -41,11 +41,25 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
     } else if (direction === "right") {
         return (
             <div className="group">
-                <button id="team1" onClick={clickTop} className={"button group-team group-team-top team-button " + top}>
+                <button 
+                    id="team1" 
+                    onClick={() => {
+                        clickTop();
+                        click(team1, id);
+                    }} 
+                    className={"button group-team group-team-top team-button " + top}
+                >
                     {team1}
                 </button>
                 <div className="group-team group-team-divider-bracket-right"></div>
-                <button id="team2" onClick={clickBottom} className={"group-team group-team-bottom team-button " + bottom}>
+                <button 
+                    id="team2" 
+                    onClick={() => {
+                        clickBottom(); 
+                        click(team2, id);
+                    }} 
+                    className={"group-team group-team-bottom team-button " + bottom}
+                >
                     {team2}
                 </button>
             </div>
