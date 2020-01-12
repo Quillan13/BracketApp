@@ -32,7 +32,7 @@ const Select16 = () => {
 					<Match direction="left" team1="Team 6" team2="Team 7" click={() => {}} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 1" team2="Team 6"></SemiFinal>
+				<SemiFinal direction="left" team1="Team 1" team2="Team 6" click={() => {}} id={0} />
 
 				<Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -42,8 +42,7 @@ const Select16 = () => {
 			<div className="bracket-right">
 				<Championship team1="Team 2" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 11" team2="Team 15"></SemiFinal>
-
+				<SemiFinal direction="right" team1="Team 11" team2="Team 15" click={() => {}} id={0} />
 				<div className="round">
 					<Match direction="right" team1="Team 9" team2="Team 11" click={() => {}} id={0} />
 					<Match direction="right" team1="Team 14" team2="Team 15" click={() => {}} id={0} />

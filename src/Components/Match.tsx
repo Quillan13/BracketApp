@@ -16,7 +16,6 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 		return (
 			<div className="group">
 				<button
-					id="team1"
 					onClick={() => {
 						clickTop();
 						click(team1, id);
@@ -26,7 +25,6 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				</button>
 				<div className="group-team group-team-divider"></div>
 				<button
-					id="team2"
 					onClick={() => {
 						clickBottom();
 						click(team2, id);
@@ -40,7 +38,6 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 		return (
 			<div className="group">
 				<button
-					id="team1"
 					onClick={() => {
 						clickTop();
 						click(team1, id);
@@ -50,7 +47,6 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				</button>
 				<div className="group-team group-team-divider-bracket-right"></div>
 				<button
-					id="team2"
 					onClick={() => {
 						clickBottom();
 						click(team2, id);

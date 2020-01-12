@@ -43,7 +43,7 @@ const Select32 = () => {
 					<Match direction="left" team1="Team 11" team2="Team 14" click={() => {}} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 1" team2="Team 14"></SemiFinal>
+				<SemiFinal direction="left" team1="Team 1" team2="Team 14" click={() => {}} id={0} />
 
 				<Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -53,7 +53,7 @@ const Select32 = () => {
 			<div className="bracket-right">
 				<Championship team1="Team 32" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 21" team2="Team 32"></SemiFinal>
+				<SemiFinal direction="right" team1="Team 21" team2="Team 32" click={() => {}} id={0} />
 
 				<div className="round">
 					<Match direction="right" team1="Team 17" team2="Team 21" click={() => {}} id={0} />
