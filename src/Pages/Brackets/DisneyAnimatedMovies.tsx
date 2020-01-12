@@ -123,22 +123,52 @@ const DisneyAnimatedMovies: Page = () => {
 		else if (id === 78) setWinner78(winner);
 		else if (id === 79) setWinner79(winner);
 		else if (id === 80) setWinner80(winner);
-		// else if (id === 81) setWinner81(winner);
-		// else if (id === 82) setWinner82(winner);
-		// else if (id === 83) setWinner83(winner);
-		// else if (id === 84) setWinner84(winner);
-		// else if (id === 85) setWinner85(winner);
-		// else if (id === 86) setWinner86(winner);
-		// else if (id === 87) setWinner87(winner);
-		// else if (id === 88) setWinner88(winner);
-		// else if (id === 89) setWinner89(winner);
-		// else if (id === 90) setWinner90(winner);
-		// else if (id === 91) setWinner91(winner);
-		// else if (id === 92) setWinner92(winner);
-		// else if (id === 93) setWinner93(winner);
-		// else if (id === 94) setWinner94(winner);
-		// else if (id === 95) setWinner95(winner);
-		// else if (id === 96) setWinner96(winner);
+		else if (id === 81) setWinner81(winner);
+		else if (id === 82) setWinner82(winner);
+		else if (id === 83) setWinner83(winner);
+		else if (id === 84) setWinner84(winner);
+		else if (id === 85) setWinner85(winner);
+		else if (id === 86) setWinner86(winner);
+		else if (id === 87) setWinner87(winner);
+		else if (id === 88) setWinner88(winner);
+		else if (id === 89) setWinner89(winner);
+		else if (id === 90) setWinner90(winner);
+		else if (id === 91) setWinner91(winner);
+		else if (id === 92) setWinner92(winner);
+		else if (id === 93) setWinner93(winner);
+		else if (id === 94) setWinner94(winner);
+		else if (id === 95) setWinner95(winner);
+		else if (id === 96) setWinner96(winner);
+		else if (id === 97) setWinner97(winner);
+		else if (id === 98) setWinner98(winner);
+		else if (id === 99) setWinner99(winner);
+		else if (id === 100) setWinner100(winner);
+		else if (id === 101) setWinner101(winner);
+		else if (id === 102) setWinner102(winner);
+		else if (id === 103) setWinner103(winner);
+		else if (id === 104) setWinner104(winner);
+		else if (id === 105) setWinner105(winner);
+		else if (id === 106) setWinner106(winner);
+		else if (id === 107) setWinner107(winner);
+		else if (id === 108) setWinner108(winner);
+		else if (id === 109) setWinner109(winner);
+		else if (id === 110) setWinner110(winner);
+		else if (id === 111) setWinner111(winner);
+		else if (id === 112) setWinner112(winner);
+		else if (id === 113) setWinner113(winner);
+		else if (id === 114) setWinner114(winner);
+		else if (id === 115) setWinner115(winner);
+		else if (id === 116) setWinner116(winner);
+		else if (id === 117) setWinner117(winner);
+		else if (id === 118) setWinner118(winner);
+		else if (id === 119) setWinner119(winner);
+		else if (id === 120) setWinner120(winner);
+		else if (id === 121) setWinner121(winner);
+		else if (id === 122) setWinner122(winner);
+		else if (id === 123) setWinner123(winner);
+		else if (id === 124) setWinner124(winner);
+		else if (id === 125) setWinner125(winner);
+		else if (id === 126) setWinner126(winner);
 	}
 
 	const classes = useStyles(createMuiTheme());
@@ -225,23 +255,53 @@ const DisneyAnimatedMovies: Page = () => {
 	const [winner78, setWinner78] = useState();
 	const [winner79, setWinner79] = useState();
 	const [winner80, setWinner80] = useState();
-	// const [winner81, setWinner81] = useState();
-	// const [winner82, setWinner82] = useState();
-	// const [winner83, setWinner83] = useState();
-	// const [winner84, setWinner84] = useState();
-	// const [winner85, setWinner85] = useState();
-	// const [winner86, setWinner86] = useState();
-	// const [winner87, setWinner87] = useState();
-	// const [winner88, setWinner88] = useState();
-	// const [winner89, setWinner89] = useState();
-	// const [winner90, setWinner90] = useState();
-	// const [winner91, setWinner91] = useState();
-	// const [winner92, setWinner92] = useState();
-	// const [winner93, setWinner93] = useState();
-	// const [winner94, setWinner94] = useState();
-	// const [winner95, setWinner95] = useState();
-	// const [winner96, setWinner96] = useState();
-	// const [winner94, setWinner64] = useState();
+	const [winner81, setWinner81] = useState();
+	const [winner82, setWinner82] = useState();
+	const [winner83, setWinner83] = useState();
+	const [winner84, setWinner84] = useState();
+	const [winner85, setWinner85] = useState();
+	const [winner86, setWinner86] = useState();
+	const [winner87, setWinner87] = useState();
+	const [winner88, setWinner88] = useState();
+	const [winner89, setWinner89] = useState();
+	const [winner90, setWinner90] = useState();
+	const [winner91, setWinner91] = useState();
+	const [winner92, setWinner92] = useState();
+	const [winner93, setWinner93] = useState();
+	const [winner94, setWinner94] = useState();
+	const [winner95, setWinner95] = useState();
+	const [winner96, setWinner96] = useState();
+	const [winner97, setWinner97] = useState();
+	const [winner98, setWinner98] = useState();
+	const [winner99, setWinner99] = useState();
+	const [winner100, setWinner100] = useState();
+	const [winner101, setWinner101] = useState();
+	const [winner102, setWinner102] = useState();
+	const [winner103, setWinner103] = useState();
+	const [winner104, setWinner104] = useState();
+	const [winner105, setWinner105] = useState();
+	const [winner106, setWinner106] = useState();
+	const [winner107, setWinner107] = useState();
+	const [winner108, setWinner108] = useState();
+	const [winner109, setWinner109] = useState();
+	const [winner110, setWinner110] = useState();
+	const [winner111, setWinner111] = useState();
+	const [winner112, setWinner112] = useState();
+	const [winner113, setWinner113] = useState();
+	const [winner114, setWinner114] = useState();
+	const [winner115, setWinner115] = useState();
+	const [winner116, setWinner116] = useState();
+	const [winner117, setWinner117] = useState();
+	const [winner118, setWinner118] = useState();
+	const [winner119, setWinner119] = useState();
+	const [winner120, setWinner120] = useState();
+	const [winner121, setWinner121] = useState();
+	const [winner122, setWinner122] = useState();
+	const [winner123, setWinner123] = useState();
+	const [winner124, setWinner124] = useState();
+	const [winner125, setWinner125] = useState();
+	const [winner126, setWinner126] = useState();
+
 
 	return (
 		<Grid container wrap="nowrap" className={classes.bracket}>
@@ -301,62 +361,61 @@ const DisneyAnimatedMovies: Page = () => {
 				</div>
 
 				<div className="round">
-					<Match direction="left" team1={winner65} team2={winner66} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner67} team2={winner68} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner69} team2={winner70} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner71} team2={winner72} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner73} team2={winner74} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner75} team2={winner76} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner77} team2={winner78} click={handleWinner} id={80} />
-					<Match direction="left" team1={winner79} team2={winner80} click={handleWinner} id={80} />
+					<Match direction="left" team1={winner65} team2={winner66} click={handleWinner} id={97} />
+					<Match direction="left" team1={winner67} team2={winner68} click={handleWinner} id={98} />
+					<Match direction="left" team1={winner69} team2={winner70} click={handleWinner} id={99} />
+					<Match direction="left" team1={winner71} team2={winner72} click={handleWinner} id={100} />
+					<Match direction="left" team1={winner73} team2={winner74} click={handleWinner} id={101} />
+					<Match direction="left" team1={winner75} team2={winner76} click={handleWinner} id={102} />
+					<Match direction="left" team1={winner77} team2={winner78} click={handleWinner} id={103} />
+					<Match direction="left" team1={winner79} team2={winner80} click={handleWinner} id={104} />
 				</div>
-				{/*
                 <div className="round">
-                    <Match direction="left" team1="" team2=""/>
-                    <Match direction="left" team1="" team2=""/>
-                    <Match direction="left" team1="" team2=""/>
-                    <Match direction="left" team1="" team2=""/>
+                    <Match direction="left" team1={winner97} team2={winner98} click={handleWinner} id={113} />
+                    <Match direction="left" team1={winner99} team2={winner100} click={handleWinner} id={114} />
+                    <Match direction="left" team1={winner101} team2={winner102} click={handleWinner} id={115} />
+                    <Match direction="left" team1={winner103} team2={winner104} click={handleWinner} id={116} />
                 </div>
 
                 <div className="round">
-                    <Match direction="left" team1="" team2=""/>
-                    <Match direction="left" team1="" team2=""/>
-                </div> */}
+                    <Match direction="left" team1={winner113} team2={winner114} click={handleWinner} id={121} />
+                    <Match direction="left" team1={winner115} team2={winner116} click={handleWinner} id={122} />
+                </div>
 
-				<SemiFinal direction="left" team1="" team2=""></SemiFinal>
+				<SemiFinal direction="left" team1={winner121} team2={winner122} click={handleWinner} id={125}></SemiFinal>
 
-				<Championship team1="" click={handleChamp1} color={left}></Championship>
+				<Championship team1={winner125} click={handleChamp1} color={left}></Championship>
 			</div>
 
 			<div className="bracket-center">Championship</div>
 
 			<div className="bracket-right">
-				<Championship team1="" click={handleChamp2} color={right}></Championship>
+				<Championship team1={winner126} click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="" team2=""></SemiFinal>
+				<SemiFinal direction="right" team1={winner123} team2={winner124} click={handleWinner} id={126}></SemiFinal>
 
-				{/* <div className="round">
-                    <Match direction="right" team1="" team2=""/>
-                    <Match direction="right" team1="" team2=""/>
+				<div className="round">
+                    <Match direction="right" team1={winner117} team2={winner118} click={handleWinner} id={123} />
+                    <Match direction="right" team1={winner119} team2={winner120} click={handleWinner} id={124} />
                 </div>
 
                 <div className="round">
-                    <Match direction="right" team1="" team2=""/>
-                    <Match direction="right" team1="" team2=""/>
-                    <Match direction="right" team1="" team2=""/>
-                    <Match direction="right" team1="" team2=""/>
+                    <Match direction="right" team1={winner105} team2={winner106} click={handleWinner} id={117} />
+                    <Match direction="right" team1={winner107} team2={winner108} click={handleWinner} id={118} />
+                    <Match direction="right" team1={winner109} team2={winner110} click={handleWinner} id={119} />
+                    <Match direction="right" team1={winner111} team2={winner112} click={handleWinner} id={120} />
                 </div>
+
 				<div className="round">
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
-					<Match direction="right" team1="" team2="" />
+					<Match direction="right" team1={winner81} team2={winner82} click={handleWinner} id={105} />
+					<Match direction="right" team1={winner83} team2={winner84} click={handleWinner} id={106} />
+					<Match direction="right" team1={winner85} team2={winner86} click={handleWinner} id={107} />
+					<Match direction="right" team1={winner87} team2={winner88} click={handleWinner} id={108} />
+					<Match direction="right" team1={winner89} team2={winner90} click={handleWinner} id={109} />
+					<Match direction="right" team1={winner91} team2={winner92} click={handleWinner} id={110} />
+					<Match direction="right" team1={winner93} team2={winner94} click={handleWinner} id={111} />
+					<Match direction="right" team1={winner95} team2={winner96} click={handleWinner} id={112} />
 				</div>
-            */}
 
 				<div className="round">
 					<Match direction="right" team1={winner33} team2={winner34} click={handleWinner} id={81} />

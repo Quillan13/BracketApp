@@ -97,7 +97,7 @@ const Select128 = () => {
 					<Match direction="left" team1="Team 33" team2="Team 56" click={() => {}} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 24" team2="Team 33"></SemiFinal>
+				<SemiFinal direction="left" team1="Team 24" team2="Team 33" click={() => {}} id={0} />
 
 				<Championship team1="Team 33" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -107,7 +107,7 @@ const Select128 = () => {
 			<div className="bracket-right">
 				<Championship team1="Team 33" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 24" team2="Team 33"></SemiFinal>
+				<SemiFinal direction="right" team1="Team 24" team2="Team 33" click={() => {}} id={0} />
 
 				<div className="round">
 					<Match direction="right" team1="Team 11" team2="Team 24" click={() => {}} id={0} />

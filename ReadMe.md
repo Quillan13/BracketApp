@@ -1,3 +1,3 @@
 # Bracket App
 
-## Quillan is dumb
+## Quillan Ogle and Dade Cook

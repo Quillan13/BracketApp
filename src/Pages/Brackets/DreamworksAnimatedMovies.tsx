@@ -126,7 +126,7 @@ const DreamworksAnimatedFilms: Page = () => {
 					<Match direction="left" team1="" team2="" click={() => {}} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="" team2=""></SemiFinal>
+				<SemiFinal direction="left" team1="" team2="" click={() => {}} id={0} />
 
 				<Championship team1="" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -136,7 +136,7 @@ const DreamworksAnimatedFilms: Page = () => {
 			<div className="bracket-right">
 				<Championship team1="" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="" team2=""></SemiFinal>
+				<SemiFinal direction="right" team1="" team2="" click={() => {}} id={0} />
 
 				<div className="round">
 					<Match direction="right" team1="" team2="" click={() => {}} id={0} />

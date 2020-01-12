@@ -62,7 +62,7 @@ const Select64 = () => {
 					<Match direction="left" team1="Team 24" team2="Team 32" click={() => {}} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 1" team2="Team 24"></SemiFinal>
+				<SemiFinal direction="left" team1="Team 1" team2="Team 24" click={() => {}} id={0} />
 
 				<Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -72,7 +72,7 @@ const Select64 = () => {
 			<div className="bracket-right">
 				<Championship team1="Team 64" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 33" team2="Team 64"></SemiFinal>
+				<SemiFinal direction="right" team1="Team 33" team2="Team 64" click={() => {}} id={0} />
 
 				<div className="round">
 					<Match direction="right" team1="Team 33" team2="Team 47" click={() => {}} id={0} />
