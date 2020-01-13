@@ -22,11 +22,11 @@ jobs:
 
       - name: Build
         run: npm run build --if-present
+        env:
+          REACT_APP_AZURE_AD_B2C_CLIENT_ID: ${{ secrets.REACT_APP_AZURE_AD_B2C_CLIENT_ID }}
+          REACT_APP_AZURE_AD_B2C_AUTHORITY: https://bracketapp.b2clogin.com/BracketApp.onmicrosoft.com/b2c_1_signin_signup/
+          REACT_APP_AZURE_AD_B2C_REDIRECT_URL: https://bracketapp.azurewebsites.net/
 
-        # env:
-        #   REACT_APP_AZURE_AD_B2C_CLIENT_ID: ${{ secrets.REACT_APP_AZURE_AD_B2C_CLIENT_ID }}
-        #   REACT_APP_AZURE_AD_B2C_AUTHORITY: https://ourhouseholdb2c.b2clogin.com/OurHouseholdB2C.onmicrosoft.com/b2c_1_signup_signin/
-        #   REACT_APP_AZURE_AD_B2C_REDIRECT_URL: https://ourhousehold.azurewebsites.net/
       - name: Test
         run: npm run test --if-present
         env:

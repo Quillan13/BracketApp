@@ -172,7 +172,7 @@ const DisneyAnimatedMovies: Page = () => {
 	}
 
 	const classes = useStyles(createMuiTheme());
-	// var winners = new Array(64);
+	// var winners = new Array();
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
 	const [winner1, setWinner1] = useState();
@@ -370,17 +370,17 @@ const DisneyAnimatedMovies: Page = () => {
 					<Match direction="left" team1={winner77} team2={winner78} click={handleWinner} id={103} />
 					<Match direction="left" team1={winner79} team2={winner80} click={handleWinner} id={104} />
 				</div>
-                <div className="round">
-                    <Match direction="left" team1={winner97} team2={winner98} click={handleWinner} id={113} />
-                    <Match direction="left" team1={winner99} team2={winner100} click={handleWinner} id={114} />
-                    <Match direction="left" team1={winner101} team2={winner102} click={handleWinner} id={115} />
-                    <Match direction="left" team1={winner103} team2={winner104} click={handleWinner} id={116} />
-                </div>
+				<div className="round">
+					<Match direction="left" team1={winner97} team2={winner98} click={handleWinner} id={113} />
+					<Match direction="left" team1={winner99} team2={winner100} click={handleWinner} id={114} />
+					<Match direction="left" team1={winner101} team2={winner102} click={handleWinner} id={115} />
+					<Match direction="left" team1={winner103} team2={winner104} click={handleWinner} id={116} />
+				</div>
 
-                <div className="round">
-                    <Match direction="left" team1={winner113} team2={winner114} click={handleWinner} id={121} />
-                    <Match direction="left" team1={winner115} team2={winner116} click={handleWinner} id={122} />
-                </div>
+				<div className="round">
+					<Match direction="left" team1={winner113} team2={winner114} click={handleWinner} id={121} />
+					<Match direction="left" team1={winner115} team2={winner116} click={handleWinner} id={122} />
+				</div>
 
 				<SemiFinal direction="left" team1={winner121} team2={winner122} click={handleWinner} id={125}></SemiFinal>
 
@@ -395,16 +395,16 @@ const DisneyAnimatedMovies: Page = () => {
 				<SemiFinal direction="right" team1={winner123} team2={winner124} click={handleWinner} id={126}></SemiFinal>
 
 				<div className="round">
-                    <Match direction="right" team1={winner117} team2={winner118} click={handleWinner} id={123} />
-                    <Match direction="right" team1={winner119} team2={winner120} click={handleWinner} id={124} />
-                </div>
+					<Match direction="right" team1={winner117} team2={winner118} click={handleWinner} id={123} />
+					<Match direction="right" team1={winner119} team2={winner120} click={handleWinner} id={124} />
+				</div>
 
-                <div className="round">
-                    <Match direction="right" team1={winner105} team2={winner106} click={handleWinner} id={117} />
-                    <Match direction="right" team1={winner107} team2={winner108} click={handleWinner} id={118} />
-                    <Match direction="right" team1={winner109} team2={winner110} click={handleWinner} id={119} />
-                    <Match direction="right" team1={winner111} team2={winner112} click={handleWinner} id={120} />
-                </div>
+				<div className="round">
+					<Match direction="right" team1={winner105} team2={winner106} click={handleWinner} id={117} />
+					<Match direction="right" team1={winner107} team2={winner108} click={handleWinner} id={118} />
+					<Match direction="right" team1={winner109} team2={winner110} click={handleWinner} id={119} />
+					<Match direction="right" team1={winner111} team2={winner112} click={handleWinner} id={120} />
+				</div>
 
 				<div className="round">
 					<Match direction="right" team1={winner81} team2={winner82} click={handleWinner} id={105} />
