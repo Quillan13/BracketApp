@@ -317,6 +317,7 @@ const DisneyAnimatedMovies: Page = () => {
 					<Match direction="left" team1={Bracket.Princesses[1].title} team2={Bracket.Princesses[14].title} click={handleWinner} id={2} />
 					<Match direction="left" team1={Bracket.Princesses[2].title} team2={Bracket.Princesses[13].title} click={handleWinner} id={3} />
 					<Match direction="left" team1={Bracket.Princesses[3].title} team2={Bracket.Princesses[12].title} click={handleWinner} id={4} />
+					{/* <p className="category-left">Princesses</p> */}
 					<Match direction="left" team1={Bracket.Princesses[4].title} team2={Bracket.Princesses[11].title} click={handleWinner} id={5} />
 					<Match direction="left" team1={Bracket.Princesses[5].title} team2={Bracket.Princesses[10].title} click={handleWinner} id={6} />
 					<Match direction="left" team1={Bracket.Princesses[6].title} team2={Bracket.Princesses[9].title} click={handleWinner} id={7} />
