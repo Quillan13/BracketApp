@@ -32,13 +32,17 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const DisneyAnimatedMovies: Page = () => {
 	function handleChamp1() {
-		setLeft('green');
-		setRight('red');
+		if (winner125 != null && winner126 != null) {
+			setLeft('green');
+			setRight('red');
+		}
 	}
 
 	function handleChamp2() {
-		setLeft('red');
-		setRight('green');
+		if (winner125 != null && winner126 != null) {
+			setLeft('red');
+			setRight('green');
+		}
 	}
 
 	function handleWinner(winner: string, id: number, loser: string) {
