@@ -109,3 +109,15 @@ body {
 .red {
     background-color: red;
 }
+
+.category-left {
+    transform: rotate(-90deg);
+    left: auto;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.category-right {
+    transform: rotate(90deg);
+}
