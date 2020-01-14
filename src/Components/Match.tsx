@@ -3,12 +3,16 @@ import React, { useState } from 'react';
 
 const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => {
 	function clickTop() {
-		setTop('green');
-		setBottom('red');
+		if (team1 != null && team2 != null) {
+			setTop('green');
+			setBottom('red');
+		}
 	}
 	function clickBottom() {
-		setTop('red');
-		setBottom('green');
+		if (team1 != null && team2 != null) {
+			setTop('red');
+			setBottom('green');
+		}
 	}
 	const [top, setTop] = useState('default');
 	const [bottom, setBottom] = useState('default');
@@ -18,7 +22,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				<button
 					onClick={() => {
 						clickTop();
-						click(team1, id);
+						click(team1, id, team2);
 					}}
 					className={'group-team group-team-top team-button ' + top}>
 					{team1}
@@ -27,7 +31,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				<button
 					onClick={() => {
 						clickBottom();
-						click(team2, id);
+						click(team2, id, team1);
 					}}
 					className={'group-team group-team-bottom team-button ' + bottom}>
 					{team2}
@@ -40,7 +44,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				<button
 					onClick={() => {
 						clickTop();
-						click(team1, id);
+						click(team1, id, team2);
 					}}
 					className={'button group-team group-team-top team-button ' + top}>
 					{team1}
@@ -49,7 +53,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 				<button
 					onClick={() => {
 						clickBottom();
-						click(team2, id);
+						click(team2, id, team1);
 					}}
 					className={'group-team group-team-bottom team-button ' + bottom}>
 					{team2}
@@ -63,7 +67,7 @@ interface MatchProps {
 	direction: string;
 	team1: string;
 	team2: string;
-	click: (winner: string, id: number) => void;
+	click: (winner: string, id: number, loser: string) => void;
 	id: number;
 }
 export default Match;
