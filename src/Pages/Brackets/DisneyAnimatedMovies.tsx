@@ -384,7 +384,7 @@ const DisneyAnimatedMovies: Page = () => {
 					<Match direction="left" team1={winner115} team2={winner116} click={handleWinner} id={122} />
 				</div>
 
-				{/* <SemiFinal direction="left" team1={winner121} team2={winner122} click={handleWinner} id={125}></SemiFinal> */}
+				<SemiFinal direction="left" team1={winner121} team2={winner122} click={handleWinner} id={125}></SemiFinal>
 
 				<Championship team1={winner125} click={handleChamp1} color={left}></Championship>
 			</div>
@@ -394,7 +394,7 @@ const DisneyAnimatedMovies: Page = () => {
 			<div className="bracket-right">
 				<Championship team1={winner126} click={handleChamp2} color={right}></Championship>
 
-				{/* <SemiFinal direction="right" team1={winner123} team2={winner124} click={handleWinner} id={126}></SemiFinal> */}
+				<SemiFinal direction="right" team1={winner123} team2={winner124} click={handleWinner} id={126}></SemiFinal>
 
 				<div className="round">
 					<Match direction="right" team1={winner117} team2={winner118} click={handleWinner} id={123} />
