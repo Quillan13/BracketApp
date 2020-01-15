@@ -1,6 +1,6 @@
 export default{
 	"Princesses": [{
-		title: "Aladin",
+		title: "Aladdin",
 		seed: 1,
 		w: 0,
 		l: 0,
