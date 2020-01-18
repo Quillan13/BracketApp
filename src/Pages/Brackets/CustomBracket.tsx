@@ -3,7 +3,6 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-import Select4 from '../select4';
 import Select8 from '../select8';
 import Select16 from '../select16';
 import Select32 from '../select32';
@@ -11,6 +10,7 @@ import Select64 from '../select64';
 import Select128 from '../select128';
 import { makeStyles, Theme, createStyles, createMuiTheme, Box, Grid } from '@material-ui/core';
 import Page from 'Types/Page';
+import Make4 from 'Components/Inputs/Make4';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -73,7 +73,7 @@ const CustomBracket: Page = () => {
 				</FormControl>
 			</Box>
 			<Grid container wrap="nowrap" className={classes.bracket}>
-				{bracketSize === 4 && <Select4></Select4>}
+				{bracketSize === 4 && <Make4></Make4>}
 				{bracketSize === 8 && <Select8></Select8>}
 				{bracketSize === 16 && <Select16></Select16>}
 				{bracketSize === 32 && <Select32></Select32>}
