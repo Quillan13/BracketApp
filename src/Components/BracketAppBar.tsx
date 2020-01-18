@@ -1,8 +1,9 @@
 import React from 'react';
+import clsx from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/AppBar';
+import MuiAppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
@@ -28,10 +29,26 @@ const useStyles = makeStyles((theme: Theme) =>
 		username: {
 			marginRight: theme.spacing(3),
 		},
+
+		appBar: {
+			zIndex: theme.zIndex.drawer + 1,
+			transition: theme.transitions.create(['width', 'margin'], {
+				easing: theme.transitions.easing.sharp,
+				duration: theme.transitions.duration.leavingScreen,
+			}),
+		},
+		appBarShift: {
+			marginLeft: 240,
+			width: `calc(100% - 240px)`,
+			transition: theme.transitions.create(['width', 'margin'], {
+				easing: theme.transitions.easing.sharp,
+				duration: theme.transitions.duration.enteringScreen,
+			}),
+		},
 	})
 );
 
-export default () => {
+const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 	const classes = useStyles();
 	const dispatch = useDispatch();
 	const isAuthenticated = useSelector((state: GlobalState) => state.authentication.isAuthenticated);
@@ -56,9 +73,9 @@ export default () => {
 	};
 
 	return (
-		<AppBar position="static">
+		<MuiAppBar position="fixed" className={clsx(classes.appBar, { [classes.appBarShift]: appDrawerOpen })}>
 			<Toolbar>
-				<IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+				<IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={() => toggleAppDrawer(!appDrawerOpen)}>
 					<MenuIcon />
 				</IconButton>
 				<Typography variant="h6" className={classes.title}>
@@ -80,6 +97,13 @@ export default () => {
 					</Button>
 				)}
 			</Toolbar>
-		</AppBar>
+		</MuiAppBar>
 	);
 };
+
+type AppBarProps = {
+	appDrawerOpen: boolean;
+	toggleAppDrawer: (open: boolean) => void;
+};
+
+export default AppBar;
