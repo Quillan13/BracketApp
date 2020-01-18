@@ -23,8 +23,6 @@ const Select4 = () => {
 		if (winner != null && loser != null) {
 			if (id === 1) setWinner1(winner);
 			else if (id === 2) setWinner2(winner);
-			else if (id === 3) setWinner3(winner);
-			else if (id === 4) setWinner4(winner);
 		}
 	}
 
@@ -36,8 +34,6 @@ const Select4 = () => {
 	const [seed4, setSeed4] = useState('Team 4');
 	const [winner1, setWinner1] = useState();
 	const [winner2, setWinner2] = useState();
-	const [winner3, setWinner3] = useState();
-	const [winner4, setWinner4] = useState();
 
 	return (
 		<>
