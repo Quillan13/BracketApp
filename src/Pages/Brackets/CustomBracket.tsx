@@ -3,14 +3,10 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-import Select8 from '../select8';
-import Select16 from '../select16';
-import Select32 from '../select32';
-import Select64 from '../select64';
-import Select128 from '../select128';
+
 import { makeStyles, Theme, createStyles, createMuiTheme, Box, Grid } from '@material-ui/core';
 import Page from 'Types/Page';
-import Make4 from 'Components/Inputs/Make4';
+import Make from 'Components/Inputs/Make';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -73,12 +69,12 @@ const CustomBracket: Page = () => {
 				</FormControl>
 			</Box>
 			<Grid container wrap="nowrap" className={classes.bracket}>
-				{bracketSize === 4 && <Make4></Make4>}
-				{bracketSize === 8 && <Select8></Select8>}
-				{bracketSize === 16 && <Select16></Select16>}
-				{bracketSize === 32 && <Select32></Select32>}
-				{bracketSize === 64 && <Select64></Select64>}
-				{bracketSize === 128 && <Select128></Select128>}
+				{bracketSize === 4 && <Make num={4} />}
+				{bracketSize === 8 && <Make num={8} />}
+				{bracketSize === 16 && <Make num={16} />}
+				{bracketSize === 32 && <Make num={32} />}
+				{bracketSize === 64 && <Make num={64} />}
+				{bracketSize === 128 && <Make num={128} />}
 			</Grid>
 		</>
 	);

@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import Select4 from "Pages/select4";
+import Select8 from "Pages/select8";
+import Select16 from "Pages/select16";
+import Select32 from "Pages/select32";
+import Select64 from "Pages/select64";
+import Select128 from "Pages/select128";
+import CustomBracket from "Pages/Brackets/CustomBracket";
 
-const Make4 = () => {
+const Make: React.FC<MakeProps> = ({num}) => {
 
     function handleClick() {
         setReady(true);
@@ -13,15 +19,16 @@ const Make4 = () => {
     const [ready, setReady] = useState(false);
 
     if (ready) {
-        return (
-            <>
-                <Select4 seed1={seed1} seed2={seed2} seed3={seed3} seed4={seed4}></Select4>
-
-            </>
-        )
+        if (num === 4){return (<><Select4 seed1={seed1} seed2={seed2} seed3={seed3} seed4={seed4}></Select4></>)}
+        else if (num === 8){return (<><Select8/></>)}
+        else if (num === 16){return (<><Select16/></>)}
+        else if (num === 32){return (<><Select32/></>)}
+        else if (num === 64){return (<><Select64/></>)}
+        else if (num === 128){return (<><Select128/></>)}
+        else {return (<><CustomBracket/></>)}
 
     }
-    else {
+    else {   
         return (
             <>
                 <form>
@@ -40,5 +47,9 @@ const Make4 = () => {
     }
 };
 
+interface MakeProps {
+    num: number;
+}
 
-export default Make4;
+
+export default Make;
