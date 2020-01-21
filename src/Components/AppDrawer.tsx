@@ -9,10 +9,11 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { createStyles, makeStyles, useTheme, Theme } from '@material-ui/core/styles';
 
-import MailIcon from '@material-ui/icons/Mail';
+import BuildIcon from '@material-ui/icons/Build';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CollectionsIcon from '@material-ui/icons/Collections';
 import { Link } from '@reach/router';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -74,21 +75,10 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 			</div>
 			<Divider />
 			<List>
-				{['Build A Bracket'].map((text, index) => (
-					<ListItem component={Link} to="/Brackets/Custom" button key={text}>
-						<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-						<ListItemText primary={text} />
-					</ListItem>
-				))}
-			</List>
-
-			<Divider />
-
-			<List>
-				{['Pre Built Brackets'].map((text, index) => (
-					<ListItem component={Link} to="/PreMade" button key={text}>
-						<ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-						<ListItemText primary={text} />
+				{[{ text: 'Build A Bracket', path: "/Brackets/Custom", icon: <BuildIcon /> }, { text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
+					<ListItem component={Link} to={route.path} button key={route.text}>
+						<ListItemIcon>{route.icon}</ListItemIcon>
+						<ListItemText primary={route.text} />
 					</ListItem>
 				))}
 			</List>
