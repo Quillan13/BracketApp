@@ -3,18 +3,18 @@ import React, { useState } from 'react';
 import Match from 'Components/Match';
 import Championship from 'Components/Championship';
 
-const Select4: React.FC<Select4Props> = ({seed1, seed2, seed3, seed4}) => {
+const Select4: React.FC<Select4Props> = ({ seeds }) => {
 	function handleChamp1() {
 		if (winner1 != null && winner2 != null) {
-		setLeft('green');
-		setRight('red');
+			setLeft('green');
+			setRight('red');
 		}
 	}
 
 	function handleChamp2() {
 		if (winner1 != null && winner2 != null) {
-		setLeft('red');
-		setRight('green');
+			setLeft('red');
+			setRight('green');
 		}
 	}
 
@@ -28,7 +28,7 @@ const Select4: React.FC<Select4Props> = ({seed1, seed2, seed3, seed4}) => {
 
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
-	
+
 	const [winner1, setWinner1] = useState();
 	const [winner2, setWinner2] = useState();
 
@@ -36,7 +36,7 @@ const Select4: React.FC<Select4Props> = ({seed1, seed2, seed3, seed4}) => {
 		<>
 			<div className="bracket-left">
 				<div className="round">
-					<Match direction="left" team1={seed1} team2={seed4} click={handleWinner} id={1} />
+					<Match direction="left" team1={seeds[0]} team2={seeds[3]} click={handleWinner} id={1} />
 				</div>
 
 				<Championship team1={winner1} click={handleChamp1} color={left}></Championship>
@@ -48,7 +48,7 @@ const Select4: React.FC<Select4Props> = ({seed1, seed2, seed3, seed4}) => {
 				<Championship team1={winner2} click={handleChamp2} color={right}></Championship>
 
 				<div className="round">
-					<Match direction="right" team1={seed2} team2={seed3} click={handleWinner} id={2} />
+					<Match direction="right" team1={seeds[1]} team2={seeds[2]} click={handleWinner} id={2} />
 				</div>
 			</div>
 		</>
@@ -56,10 +56,7 @@ const Select4: React.FC<Select4Props> = ({seed1, seed2, seed3, seed4}) => {
 };
 
 interface Select4Props {
-	seed1: string;
-	seed2: string;
-	seed3: string;
-	seed4: string;
+	seeds: string[];
 }
 
 export default Select4;
