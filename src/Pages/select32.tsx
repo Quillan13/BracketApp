@@ -4,7 +4,7 @@ import Match from 'Components/Match';
 import SemiFinal from 'Components/SemiFinal';
 import Championship from 'Components/Championship';
 
-const Select32 = () => {
+const Select32: React.FC<Select32Props> = ({ seeds }) => {
 	function handleChamp1() {
 		setLeft('green');
 		setRight('red');
@@ -21,29 +21,29 @@ const Select32 = () => {
 		<>
 			<div className="bracket-left">
 				<div className="round">
-					<Match direction="left" team1="Team 1" team2="Team 2" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 3" team2="Team 4" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 5" team2="Team 6" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 7" team2="Team 8" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 9" team2="Team 10" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 11" team2="Team 12" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 13" team2="Team 14" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 15" team2="Team 16" click={() => {}} id={0} />
+					<Match direction="left" team1="Team 1" team2="Team 2" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 3" team2="Team 4" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 5" team2="Team 6" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 7" team2="Team 8" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 9" team2="Team 10" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 11" team2="Team 12" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 13" team2="Team 14" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 15" team2="Team 16" click={() => { }} id={0} />
 				</div>
 
 				<div className="round">
-					<Match direction="left" team1="Team 1" team2="Team 3" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 5" team2="Team 8" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 10" team2="Team 11" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 14" team2="Team 16" click={() => {}} id={0} />
+					<Match direction="left" team1="Team 1" team2="Team 3" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 5" team2="Team 8" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 10" team2="Team 11" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 14" team2="Team 16" click={() => { }} id={0} />
 				</div>
 
 				<div className="round">
-					<Match direction="left" team1="Team 1" team2="Team 8" click={() => {}} id={0} />
-					<Match direction="left" team1="Team 11" team2="Team 14" click={() => {}} id={0} />
+					<Match direction="left" team1="Team 1" team2="Team 8" click={() => { }} id={0} />
+					<Match direction="left" team1="Team 11" team2="Team 14" click={() => { }} id={0} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 1" team2="Team 14" click={() => {}} id={0} />
+				<SemiFinal direction="left" team1="Team 1" team2="Team 14" click={() => { }} id={0} />
 
 				<Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
 			</div>
@@ -53,31 +53,35 @@ const Select32 = () => {
 			<div className="bracket-right">
 				<Championship team1="Team 32" click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 21" team2="Team 32" click={() => {}} id={0} />
+				<SemiFinal direction="right" team1="Team 21" team2="Team 32" click={() => { }} id={0} />
 
 				<div className="round">
-					<Match direction="right" team1="Team 17" team2="Team 21" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 27" team2="Team 32" click={() => {}} id={0} />
+					<Match direction="right" team1="Team 17" team2="Team 21" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 27" team2="Team 32" click={() => { }} id={0} />
 				</div>
 				<div className="round">
-					<Match direction="right" team1="Team 17" team2="Team 19" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 21" team2="Team 24" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 26" team2="Team 27" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 30" team2="Team 32" click={() => {}} id={0} />
+					<Match direction="right" team1="Team 17" team2="Team 19" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 21" team2="Team 24" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 26" team2="Team 27" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 30" team2="Team 32" click={() => { }} id={0} />
 				</div>
 				<div className="round">
-					<Match direction="right" team1="Team 17" team2="Team 18" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 19" team2="Team 20" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 21" team2="Team 22" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 23" team2="Team 24" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 25" team2="Team 26" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 27" team2="Team 28" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 29" team2="Team 30" click={() => {}} id={0} />
-					<Match direction="right" team1="Team 31" team2="Team 32" click={() => {}} id={0} />
+					<Match direction="right" team1="Team 17" team2="Team 18" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 19" team2="Team 20" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 21" team2="Team 22" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 23" team2="Team 24" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 25" team2="Team 26" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 27" team2="Team 28" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 29" team2="Team 30" click={() => { }} id={0} />
+					<Match direction="right" team1="Team 31" team2="Team 32" click={() => { }} id={0} />
 				</div>
 			</div>
 		</>
 	);
 };
+
+interface Select32Props {
+	seeds: string[];
+}
 
 export default Select32;

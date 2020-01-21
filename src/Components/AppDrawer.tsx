@@ -1,15 +1,20 @@
 import clsx from 'clsx';
 import React from 'react';
-
-import Button from '@material-ui/core/Button';
-
+import List from '@material-ui/core/List';
 import Drawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
+import ListItem from '@material-ui/core/ListItem';
 import IconButton from '@material-ui/core/IconButton';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import { createStyles, makeStyles, useTheme, Theme } from '@material-ui/core/styles';
 
+import BuildIcon from '@material-ui/icons/Build';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import CollectionsIcon from '@material-ui/icons/Collections';
+import { Link } from '@reach/router';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -69,9 +74,15 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 				</IconButton>
 			</div>
 			<Divider />
-			<Button href="/Brackets/Custom">Build a Bracket</Button>
+			<List>
+				{[{ text: 'Build A Bracket', path: "/Brackets/Custom", icon: <BuildIcon /> }, { text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
+					<ListItem component={Link} to={route.path} button key={route.text}>
+						<ListItemIcon>{route.icon}</ListItemIcon>
+						<ListItemText primary={route.text} />
+					</ListItem>
+				))}
+			</List>
 			<Divider />
-			<Button href="/PreMade">Pre Built Brackets</Button>
 		</Drawer>
 	);
 };
