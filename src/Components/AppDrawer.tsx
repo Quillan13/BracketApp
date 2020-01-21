@@ -13,7 +13,6 @@ import MailIcon from '@material-ui/icons/Mail';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { Button } from '@material-ui/core';
 import { Link } from '@reach/router';
 
 const useStyles = makeStyles((theme: Theme) =>
