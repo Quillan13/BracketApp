@@ -27,12 +27,12 @@ const Make: React.FC<MakeProps> = ({ num }) => {
 
 
     if (ready) {
-        if (num === 4) { return (<><Select4 seeds={seeds}></Select4></>) }
-        else if (num === 8) { return (<><Select8 /></>) }
-        else if (num === 16) { return (<><Select16 /></>) }
-        else if (num === 32) { return (<><Select32 /></>) }
-        else if (num === 64) { return (<><Select64 /></>) }
-        else if (num === 128) { return (<><Select128 /></>) }
+        if (num === 4) { return (<><Select4 seeds={seeds} /></>) }
+        else if (num === 8) { return (<><Select8 seeds={seeds} /></>) }
+        else if (num === 16) { return (<><Select16 seeds={seeds} /></>) }
+        else if (num === 32) { return (<><Select32 seeds={seeds} /></>) }
+        else if (num === 64) { return (<><Select64 seeds={seeds} /></>) }
+        else if (num === 128) { return (<><Select128 seeds={seeds} /></>) }
         else { return (<><CustomBracket /></>) }
 
     }
