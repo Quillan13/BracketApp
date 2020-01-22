@@ -9,8 +9,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { createStyles, makeStyles, useTheme, Theme } from '@material-ui/core/styles';
 
+import HomeIcon from '@material-ui/icons/Home';
 import BuildIcon from '@material-ui/icons/Build';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import CollectionsIcon from '@material-ui/icons/Collections';
@@ -75,7 +75,9 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 			</div>
 			<Divider />
 			<List>
-				{[{ text: 'Build A Bracket', path: "/Brackets/Custom", icon: <BuildIcon /> }, { text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
+				{[{ text: 'Home', path: "/", icon: <HomeIcon /> },
+				{ text: 'Build A Bracket', path: "/Brackets/Custom", icon: <BuildIcon /> },
+				{ text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
 					<ListItem component={Link} to={route.path} button key={route.text}>
 						<ListItemIcon>{route.icon}</ListItemIcon>
 						<ListItemText primary={route.text} />
