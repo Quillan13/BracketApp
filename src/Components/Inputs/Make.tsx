@@ -39,12 +39,22 @@ const Make: React.FC<MakeProps> = ({ num }) => {
 
     else {
         return (
-            <Grid item container direction="column">
-                {seeds.map((team: string, index: number) => (
-                    <label key={`team-${index + 1}`}>
-                        Seed {index + 1}
-                        <input value={team} style={{ margin: "10px" }} onChange={getOnChange(index)} />
-                    </label>
+            <Grid item container xs={6} justify="center">
+                {seeds.filter((_, index) => index < num / 2).map((team: string, index: number) => (
+                    <>
+                        <Grid item xs={6}>
+                            <label key={`team-${index + 1}`}>
+                                Seed {index + 1}
+                                <input value={team} style={{ margin: "10px" }} onChange={getOnChange(index)} />
+                            </label>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <label key={`team-${seeds.length - index}`}>
+                                Seed {seeds.length - index}
+                                <input value={seeds[seeds.length - index - 1]} style={{ margin: "10px" }} onChange={getOnChange(seeds.length - index - 1)} />
+                            </label>
+                        </Grid>
+                    </>
                 ))
                 }
                 <div>

@@ -4,7 +4,10 @@ import Page from 'Types/Page';
 
 const Home: Page = () => {
 	return (
-        <></>
+		<>
+			This Is The HomePage
+		</>
+
 	);
 };
 
