@@ -20,7 +20,10 @@ const Select8: React.FC<Select8Props> = ({ seeds }) => {
 		<>
 			<div className="bracket-left">
 				<div className="round">
-					<Match direction="left" team1="Team 1" team2="Team 2" click={() => { }} id={0} />
+					{/* {seeds.filter((_, index) => index < seeds.length / 2).map((team: string, index: number) => (
+						<Match>direction="left" team1={seeds[index]} team2={seeds[seeds.length - index - 1]} click={handleWinner} id={1}</Match>
+					))} */}
+					< Match direction="left" team1="Team 1" team2="Team 2" click={() => { }} id={0} />
 					<Match direction="left" team1="Team 3" team2="Team 4" click={() => { }} id={0} />
 				</div>
 
