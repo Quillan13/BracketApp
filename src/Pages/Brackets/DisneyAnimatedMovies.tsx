@@ -46,7 +46,6 @@ const DisneyAnimatedMovies: Page = () => {
 	}
 
 	function handleWinner(winner: string, id: number, loser: string) {
-		// winners[id] = winner;
 		if (winner != null && loser != null) {
 			if (id === 1) setWinner1(winner);
 			else if (id === 2) setWinner2(winner);
