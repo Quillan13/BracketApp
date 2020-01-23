@@ -61,20 +61,6 @@ const Make: React.FC<MakeProps> = ({ num }) => {
                     <br></br><button onClick={handleClick}>Submit</button>
                 </div>
             </Grid>
-
-            // <>
-            //     <form>
-            //         <label>Seed 1</label><br></br>
-            //         <input name="Seed 1" onChange={(event) => setSeed1(event.target.value)} value={seed1} />
-            //         <br></br><label>Seed 2</label><br></br>
-            //         <input name="Seed 2" onChange={(event) => setSeed2(event.target.value)} value={seed2} />
-            //         <br></br><label>Seed 3</label><br></br>
-            //         <input name="Seed 3" onChange={(event) => setSeed3(event.target.value)} value={seed3} />
-            //         <br></br><label>Seed 4</label><br></br>
-            //         <input name="Seed 4" onChange={(event) => setSeed4(event.target.value)} value={seed4} />
-            //         <br></br><button onClick={handleClick}>Submit</button>
-            //     </form>
-            // </>
         )
     }
 };
