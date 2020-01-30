@@ -12,7 +12,6 @@ import Home from 'Pages/Home';
 const App: React.FC = () => {
 	return (
 		<>
-			Home
 			<Layout>
 				<Router>
 					<Home path="/" />

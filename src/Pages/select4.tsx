@@ -5,11 +5,9 @@ import Championship from 'Components/Championship';
 
 const Select4: React.FC<Select4Props> = ({ seeds }) => {
 	function handleChamp1() {
-		if (winner1 != null && winner2 != null) {
-			if (winner1 !== "" && winner2 !== "") {
-				setLeft('green');
-				setRight('red');
-			}
+		if ((winner1 ?? "") !== "" && (winner2 ?? "") !== "") {
+			setLeft('green');
+			setRight('red');
 		}
 	}
 
@@ -23,7 +21,6 @@ const Select4: React.FC<Select4Props> = ({ seeds }) => {
 	}
 
 	function handleWinner(winner: string, id: number, loser: string) {
-		// winners[id] = winner;
 		if (winner != null && loser != null) {
 			if (id === 1) setWinner1(winner);
 			else if (id === 2) setWinner2(winner);
