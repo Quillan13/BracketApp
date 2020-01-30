@@ -6,42 +6,62 @@ import Championship from 'Components/Championship';
 
 const Select8: React.FC<Select8Props> = ({ seeds }) => {
 	function handleChamp1() {
-		setLeft('green');
-		setRight('red');
+		if (winners[4] != null && winners[5] != null) {
+			if (winners[4] !== "" && winners[5] !== "") {
+				setLeft('green');
+				setRight('red');
+			}
+		}
 	}
 
 	function handleChamp2() {
-		setLeft('red');
-		setRight('green');
+		if (winners[4] != null && winners[5] != null) {
+			if (winners[4] !== "" && winners[5] !== "") {
+				setLeft('red');
+				setRight('green');
+			}
+		}
 	}
+
+	function handleWinner(winner: string, index: number, loser: string) {
+		if (winner != null && loser != null) {
+			if (winner !== "" && loser !== "") {
+				const newWinners = [...winners];
+				newWinners[index] = winner;
+				setWinner(newWinners);
+			}
+		}
+	}
+
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
+    const [winners, setWinner] = useState([...new Array(6)].map(() => ""));
+
+
+
 	return (
 		<>
 			<div className="bracket-left">
 				<div className="round">
-					{/* {seeds.filter((_, index) => index < seeds.length / 2).map((team: string, index: number) => (
-						<Match>direction="left" team1={seeds[index]} team2={seeds[seeds.length - index - 1]} click={handleWinner} id={1}</Match>
-					))} */}
-					< Match direction="left" team1="Team 1" team2="Team 2" click={() => { }} id={0} />
-					<Match direction="left" team1="Team 3" team2="Team 4" click={() => { }} id={0} />
+					<Match direction="left" team1={seeds[0]} team2={seeds[7]} click={handleWinner} id={0} />
+					<Match direction="left" team1={seeds[1]} team2={seeds[6]} click={handleWinner} id={1} />
 				</div>
 
-				<SemiFinal direction="left" team1="Team 1" team2="Team 4" click={() => { }} id={0} />
+				<SemiFinal direction="left" team1={winners[0]} team2={winners[1]} click={handleWinner} id={4} />
 
-				<Championship team1="Team 1" click={handleChamp1} color={left}></Championship>
+				<Championship team1={winners[4]} click={handleChamp1} color={left}></Championship>
 			</div>
 
 			<div className="bracket-center">Championship</div>
 
 			<div className="bracket-right">
-				<Championship team1="Team 7" click={handleChamp2} color={right}></Championship>
+				<Championship team1={winners[5]} click={handleChamp2} color={right}></Championship>
 
-				<SemiFinal direction="right" team1="Team 5" team2="Team 7" click={() => { }} id={0} />
+				<SemiFinal direction="right" team1={winners[2]} team2={winners[3]} click={handleWinner} id={5} />
 
 				<div className="round">
-					<Match direction="right" team1="Team 5" team2="Team 6" click={() => { }} id={0} />
-					<Match direction="right" team1="Team 7" team2="Team 8" click={() => { }} id={0} />
+					<Match direction="right" team1={seeds[2]} team2={seeds[5]} click={handleWinner} id={2} />
+					<Match direction="right" team1={seeds[3]} team2={seeds[4]} click={handleWinner} id={3} />
 				</div>
 			</div>
 		</>
