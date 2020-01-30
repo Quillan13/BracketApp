@@ -3,21 +3,19 @@ import React, { useState } from 'react';
 
 const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => {
 	function clickTop() {
-		if (team1 != null && team2 != null) {
-			if (team1 !== "" && team2 !== "") {
-				setTop('green');
-				setBottom('red');
-			}
+		if ((team1 ?? "") !== "" && (team2 ?? "") !== "") {
+			setTop('green');
+			setBottom('red');
 		}
 	}
+
 	function clickBottom() {
-		if (team1 != null && team2 != null) {
-			if (team1 !== "" && team2 !== "") {
-				setTop('red');
-				setBottom('green');
-			}
+		if ((team1 ?? "") !== "" && (team2 ?? "") !== "") {
+			setTop('red');
+			setBottom('green');
 		}
 	}
+
 	const [top, setTop] = useState('default');
 	const [bottom, setBottom] = useState('default');
 	if (direction === 'left') {

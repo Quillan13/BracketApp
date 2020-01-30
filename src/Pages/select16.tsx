@@ -14,6 +14,14 @@ const Select16: React.FC<Select16Props> = ({ seeds }) => {
 		setLeft('red');
 		setRight('green');
 	}
+
+	// function handleWinner(winner: string, id: number, loser: string) {
+	// 	if (winner != null && loser != null) {
+	// 		if (id === 1) setWinner1(winner);
+	// 		else if (id === 2) setWinner2(winner);
+	// 	}
+	// }
+
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
 
@@ -21,6 +29,12 @@ const Select16: React.FC<Select16Props> = ({ seeds }) => {
 		<>
 			<div className="bracket-left">
 				<div className="round">
+					{seeds.filter((_, index) => index < seeds.length / 4).map((team: string, index: number) => (
+						<>
+							<Match direction="left" team1={seeds[index]} team2="Team 2" click={() => { }} id={0} />
+						</>
+					))
+					}
 					<Match direction="left" team1="Team 1" team2="Team 2" click={() => { }} id={0} />
 					<Match direction="left" team1="Team 3" team2="Team 4" click={() => { }} id={0} />
 					<Match direction="left" team1="Team 5" team2="Team 6" click={() => { }} id={0} />
