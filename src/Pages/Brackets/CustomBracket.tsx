@@ -69,12 +69,12 @@ const CustomBracket: Page = () => {
 				</FormControl>
 			</Box>
 			<Grid container wrap="nowrap" className={classes.bracket}>
-				{bracketSize === 4 && <Make num={4} />}
-				{bracketSize === 8 && <Make num={8} />}
-				{bracketSize === 16 && <Make num={16} />}
-				{bracketSize === 32 && <Make num={32} />}
-				{bracketSize === 64 && <Make num={64} />}
-				{bracketSize === 128 && <Make num={128} />}
+				{bracketSize === 4 && <Make path="Custom/4" num={4} />}
+				{bracketSize === 8 && <Make path="Custom/8" num={8} />}
+				{bracketSize === 16 && <Make path="Custom/16" num={16} />}
+				{bracketSize === 32 && <Make path="Custom/32" num={32} />}
+				{bracketSize === 64 && <Make path="Custom/64" num={64} />}
+				{bracketSize === 128 && <Make path="Custom/128" num={128} />}
 			</Grid>
 		</>
 	);

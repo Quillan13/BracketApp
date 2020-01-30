@@ -7,8 +7,10 @@ import Select64 from "Pages/select64";
 import Select128 from "Pages/select128";
 import CustomBracket from "Pages/Brackets/CustomBracket";
 import { Grid } from "@material-ui/core";
+import Page from 'Types/Page';
 
-const Make: React.FC<MakeProps> = ({ num }) => {
+
+const Make: Page<MakeProps> = ({ num }) => {
 
     function handleClick() {
         setReady(true);
