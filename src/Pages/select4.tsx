@@ -22,13 +22,13 @@ const Select4: React.FC<Select4Props> = ({ seeds }) => {
 		if (winner != null && loser != null) {
 			const newWinners = [...winners];
 			newWinners[index] = event.target.value;
-			setWinners(newWinners);
+			setWinner(newWinners);
 		}
 	};
 
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
-	const [winners, setWinners] = useState([...new Array(4)].map(() => ""));
+	const [winners, setWinner] = useState([...new Array(4)].map(() => ""));
 
 	return (
 		<>

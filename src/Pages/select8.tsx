@@ -23,19 +23,17 @@ const Select8: React.FC<Select8Props> = ({ seeds }) => {
 		}
 	}
 
-	function handleWinner(winner: string, index: number, loser: string) {
+	const handleWinner = (winner: string, index: number, loser: string) => (event: any) => {
 		if (winner != null && loser != null) {
-			if (winner !== "" && loser !== "") {
-				const newWinners = [...winners];
-				newWinners[index] = winner;
-				setWinner(newWinners);
-			}
+			const newWinners = [...winners];
+			newWinners[index] = event.target.value;
+			setWinner(newWinners);
 		}
-	}
+	};
 
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
-    const [winners, setWinner] = useState([...new Array(6)].map(() => ""));
+	const [winners, setWinner] = useState([...new Array(6)].map(() => ""));
 
 
 
