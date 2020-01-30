@@ -11,6 +11,7 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core';
 
 import MenuIcon from '@material-ui/icons/Menu';
 
+import UserMenu from './UserMenu';
 import AuthService from 'Services/AuthService';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import { GlobalState } from 'Store';
@@ -45,6 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
 				duration: theme.transitions.duration.enteringScreen,
 			}),
 		},
+		loginButton: { textTransform: 'none' },
 	})
 );
 
@@ -63,14 +65,6 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 		}
 	};
 
-	const logout = async () => {
-		try {
-			AuthService.LogOut();
-			dispatch(AuthenticationActionCreators.LogOut());
-		} catch (error) {
-			console.error(error);
-		}
-	};
 
 	return (
 		<MuiAppBar position="fixed" className={clsx(classes.appBar, { [classes.appBarShift]: appDrawerOpen })}>
@@ -87,13 +81,11 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 						Hello and Welcome, {username}
 					</Typography>
 				)}
-				{isAuthenticated ? (
-					<Button variant="contained" color="secondary" onClick={logout}>
-						Logout
-					</Button>
-				) : (
-					<Button variant="contained" color="secondary" onClick={login}>
-						Login
+				{isAuthenticated && <UserMenu />}
+
+				{!isAuthenticated && (
+					<Button className={classes.loginButton} size="small" color="secondary" variant="contained" onClick={login}>
+						Log In
 					</Button>
 				)}
 			</Toolbar>
