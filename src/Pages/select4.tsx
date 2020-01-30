@@ -28,7 +28,7 @@ const Select4: React.FC<Select4Props> = ({ seeds }) => {
 
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
-	const [winners, setWinner] = useState([...new Array(4)].map(() => ""));
+	const [winners, setWinner] = useState([].map(() => ""));
 
 	return (
 		<>

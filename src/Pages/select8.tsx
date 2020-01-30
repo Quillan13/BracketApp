@@ -6,20 +6,16 @@ import Championship from 'Components/Championship';
 
 const Select8: React.FC<Select8Props> = ({ seeds }) => {
 	function handleChamp1() {
-		if (winners[4] != null && winners[5] != null) {
-			if (winners[4] !== "" && winners[5] !== "") {
-				setLeft('green');
-				setRight('red');
-			}
+		if ((winners[4] ?? "") !== "" && (winners[5] ?? "") !== "") {
+			setLeft('green');
+			setRight('red');
 		}
 	}
 
 	function handleChamp2() {
-		if (winners[4] != null && winners[5] != null) {
-			if (winners[4] !== "" && winners[5] !== "") {
-				setLeft('red');
-				setRight('green');
-			}
+		if ((winners[4] ?? "") !== "" && (winners[5] ?? "") !== "") {
+			setLeft('red');
+			setRight('green');
 		}
 	}
 
@@ -33,7 +29,7 @@ const Select8: React.FC<Select8Props> = ({ seeds }) => {
 
 	const [left, setLeft] = useState('default');
 	const [right, setRight] = useState('default');
-	const [winners, setWinner] = useState([...new Array(6)].map(() => ""));
+	const [winners, setWinner] = useState([].map(() => ""));
 
 
 
