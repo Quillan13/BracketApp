@@ -19,10 +19,10 @@ const Select8: React.FC<Select8Props> = ({ seeds }) => {
 		}
 	}
 
-	const handleWinner = (winner: string, index: number, loser: string) => (event: any) => {
+	const handleWinner = (winner: string, index: number, loser: string) => {
 		if (winner != null && loser != null) {
 			const newWinners = [...winners];
-			newWinners[index] = event.target.value;
+			newWinners[index] = winner;
 			setWinner(newWinners);
 		}
 	};
