@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const CustomBracket: Page = () => {
+const SingleCustomBracket: Page = () => {
 	const classes = useStyles(createMuiTheme());
 
 	const inputLabel = React.useRef<HTMLLabelElement>(null);
@@ -80,4 +80,4 @@ const CustomBracket: Page = () => {
 	);
 };
 
-export default CustomBracket;
+export default SingleCustomBracket;
