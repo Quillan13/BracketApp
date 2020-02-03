@@ -6,7 +6,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import { makeStyles, Theme, createStyles, createMuiTheme, Box, Grid } from '@material-ui/core';
 import Page from 'Types/Page';
-import Make from 'Components/Inputs/Make';
+import MakeDouble from 'Components/Inputs/MakeDouble';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -63,18 +63,18 @@ const DoubleCustomBracket: Page = () => {
                         <MenuItem value={8}>8</MenuItem>
                         <MenuItem value={16}>16</MenuItem>
                         <MenuItem value={32}>32</MenuItem>
-                        <MenuItem value={64}>64</MenuItem>
-                        <MenuItem value={128}>128</MenuItem>
+                        {/* <MenuItem value={64}>64</MenuItem>
+                        <MenuItem value={128}>128</MenuItem> */}
                     </Select>
                 </FormControl>
             </Box>
             <Grid container wrap="nowrap" className={classes.bracket}>
-                {bracketSize === 4 && <Make num={4} />}
-                {bracketSize === 8 && <Make num={8} />}
-                {bracketSize === 16 && <Make num={16} />}
-                {bracketSize === 32 && <Make num={32} />}
-                {bracketSize === 64 && <Make num={64} />}
-                {bracketSize === 128 && <Make num={128} />}
+                {bracketSize === 4 && <MakeDouble num={4} />}
+                {bracketSize === 8 && <MakeDouble num={8} />}
+                {bracketSize === 16 && <MakeDouble num={16} />}
+                {bracketSize === 32 && <MakeDouble num={32} />}
+                {/* {bracketSize === 64 && <MakeDouble num={64} />}
+                {bracketSize === 128 && <MakeDouble num={128} />} */}
             </Grid>
         </>
     );
