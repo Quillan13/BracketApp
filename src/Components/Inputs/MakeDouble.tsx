@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Select4 from "Pages/SingleCustom/select4";
-import Select8 from "Pages/SingleCustom/select8";
-import Select16 from "Pages/SingleCustom/select16";
-import Select32 from "Pages/SingleCustom/select32";
-import Select64 from "Pages/SingleCustom/select64";
-import Select128 from "Pages/SingleCustom/select128";
-import SingleCustomBracket from "Pages/Brackets/SingleCustomBracket";
+import Select4 from "Pages/DoubleCustom/select4";
+import Select8 from "Pages/DoubleCustom/select8";
+import Select16 from "Pages/DoubleCustom/select16";
+import Select32 from "Pages/DoubleCustom/select32";
+import Select64 from "Pages/DoubleCustom/select64";
+import Select128 from "Pages/DoubleCustom/select128";
+import DoubleCustomBracket from "Pages/Brackets/DoubleCustomBracket";
 import { Grid } from "@material-ui/core";
 import Page from 'Types/Page';
 
 
-const Make: Page<MakeProps> = ({ num }) => {
+const MakeDouble: Page<MakeProps> = ({ num }) => {
 
     function handleClick() {
         setReady(true);
@@ -35,7 +35,7 @@ const Make: Page<MakeProps> = ({ num }) => {
         else if (num === 32) { return (<><Select32 seeds={seeds} /></>) }
         else if (num === 64) { return (<><Select64 seeds={seeds} /></>) }
         else if (num === 128) { return (<><Select128 seeds={seeds} /></>) }
-        else { return (<><SingleCustomBracket /></>) }
+        else { return (<><DoubleCustomBracket /></>) }
 
     }
 
@@ -71,4 +71,4 @@ interface MakeProps {
 }
 
 
-export default Make;
+export default MakeDouble;

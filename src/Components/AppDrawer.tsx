@@ -76,7 +76,7 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 			<Divider />
 			<List>
 				{[{ text: 'Home', path: "/", icon: <HomeIcon /> },
-				{ text: 'Build A Bracket', path: "/Brackets/Custom", icon: <BuildIcon /> },
+				{ text: 'Build A Bracket', path: "/Brackets/BracketType", icon: <BuildIcon /> },
 				{ text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
 					<ListItem component={Link} to={route.path} button key={route.text}>
 						<ListItemIcon>{route.icon}</ListItemIcon>
