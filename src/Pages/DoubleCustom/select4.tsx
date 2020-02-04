@@ -60,7 +60,7 @@ const Select4: React.FC<Select4Props> = ({ seeds }) => {
 
 				<div className="round">
 					<Match direction="right" team1={losers[1]} team2={losers[2]} click={handleWinner} id={4} />
-					<Match direction="right" team1="-------" team2="-------" click={handleWinner} id={5} />
+					<Match direction="right" team1="-------" team2="-------" click={handleWinner} id={5} view="no" />
 				</div>
 				<div className="bracket-center">Losers</div>
 			</div>

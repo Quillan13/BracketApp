@@ -1,7 +1,7 @@
 import 'Styles/BracketDisplay.css';
 import React, { useState } from 'react';
 
-const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => {
+const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id, view }) => {
 	function clickTop() {
 		if ((team1 ?? "") !== "" && (team2 ?? "") !== "") {
 			setTop('green');
@@ -18,6 +18,12 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 
 	const [top, setTop] = useState('default');
 	const [bottom, setBottom] = useState('default');
+	let hidden: string = "";
+
+	if (view === "no") {
+		hidden = "hidden";
+	}
+
 	if (direction === 'left') {
 		return (
 			<div className="group">
@@ -42,7 +48,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 		);
 	} else if (direction === 'right') {
 		return (
-			<div className="group">
+			<div className={"group " + hidden}>
 				<button
 					onClick={() => {
 						clickTop();
@@ -60,7 +66,7 @@ const Match: React.FC<MatchProps> = ({ direction, team1, team2, click, id }) => 
 					className={'group-team group-team-bottom team-button ' + bottom}>
 					{team2}
 				</button>
-			</div>
+			</div >
 		);
 	}
 	return null;
@@ -71,5 +77,6 @@ interface MatchProps {
 	team2: string;
 	click: (winner: string, id: number, loser: string) => void;
 	id: number;
+	view?: string;
 }
 export default Match;
