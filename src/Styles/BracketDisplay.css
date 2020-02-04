@@ -121,3 +121,7 @@ body {
 .category-right {
     transform: rotate(90deg);
 }
+
+.hidden {
+    visibility: hidden;
+}
