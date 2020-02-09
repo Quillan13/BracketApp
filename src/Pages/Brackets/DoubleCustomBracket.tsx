@@ -62,7 +62,7 @@ const DoubleCustomBracket: Page = () => {
                         <MenuItem value={4}>4</MenuItem>
                         <MenuItem value={8}>8</MenuItem>
                         <MenuItem value={16}>16</MenuItem>
-                        <MenuItem value={32}>32</MenuItem>
+                        {/* <MenuItem value={32}>32</MenuItem> */}
                         {/* <MenuItem value={64}>64</MenuItem>
                         <MenuItem value={128}>128</MenuItem> */}
                     </Select>
@@ -72,7 +72,7 @@ const DoubleCustomBracket: Page = () => {
                 {bracketSize === 4 && <MakeDouble num={4} />}
                 {bracketSize === 8 && <MakeDouble num={8} />}
                 {bracketSize === 16 && <MakeDouble num={16} />}
-                {bracketSize === 32 && <MakeDouble num={32} />}
+                {/* {bracketSize === 32 && <MakeDouble num={32} />} */}
                 {/* {bracketSize === 64 && <MakeDouble num={64} />}
                 {bracketSize === 128 && <MakeDouble num={128} />} */}
             </Grid>
