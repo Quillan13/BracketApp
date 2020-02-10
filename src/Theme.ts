@@ -1,14 +1,19 @@
-import Blue from '@material-ui/core/colors/blue';
-import Orange from '@material-ui/core/colors/orange';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
 export default createMuiTheme({
 	palette: {
 		primary: {
-			main: Blue[700],
+			main: '#0021A5',
+			contrastText: '#fff',
 		},
 		secondary: {
-			main: Orange[800],
+			main: '#FA4616',
+			contrastText: '#fff',
+		},
+		tertiary: {
+			main: '#01723E',
+			contrastText: '#fff',
+			dark: '#005005',
 		},
 	},
 });

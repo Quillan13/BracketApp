@@ -1,6 +1,7 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
+import MM2020 from 'Pages/Brackets/MM2020'
 import Brackets from 'Pages/Brackets';
 import BracketType from 'Pages/Brackets/BracketType'
 import SingleCustomBracket from 'Pages/Brackets/SingleCustomBracket';
@@ -20,6 +21,7 @@ const App: React.FC = () => {
 					<PreMade path="PreMade" />
 					<Brackets path="Brackets">
 						<BracketType path="BracketType" />
+						<MM2020 path="MM2020" />
 						<SingleCustomBracket path="SingleCustom" />
 						<DoubleCustomBracket path="DoubleCustom" />
 						<DisneyAnimatedMovies path="DisneyAnimated" />
