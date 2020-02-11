@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme: Theme) =>
 		height: {
 			height: "100%-toolbar", //theme.mixins.toolbar
 		},
+		bgColor: {
+			background: "#E3E2E2",
+		},
 	})
 );
 
@@ -22,7 +25,7 @@ const Layout: React.FC = ({ children }) => {
 	const classes = useStyles();
 
 	return (
-		<Box display="flex">
+		<Box className={classes.bgColor} display="flex">
 			<CssBaseline />
 			<AppBar appDrawerOpen={appDrawerOpen} toggleAppDrawer={setAppDrawerOpen} />
 			<AppDrawer open={appDrawerOpen} onClose={() => setAppDrawerOpen(false)} />
