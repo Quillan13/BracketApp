@@ -11,8 +11,20 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
-		height: {
-			height: "100%-toolbar", //theme.mixins.toolbar
+		container: {
+			padding: theme.spacing(2),
+
+			minHeight: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`,
+
+			'@media (min-width:0px) and (orientation: landscape)': {
+				minHeight: `calc(100vh - ${
+					(theme.mixins.toolbar['@media (min-width:0px) and (orientation: landscape)'] as any).minHeight
+					}px)`,
+			},
+
+			'@media (min-width: 600px)': {
+				minHeight: `calc(100vh - ${(theme.mixins.toolbar['@media (min-width:600px)'] as any).minHeight}px)`,
+			},
 		},
 		bgColor: {
 			background: "#E3E2E2",
@@ -29,9 +41,9 @@ const Layout: React.FC = ({ children }) => {
 			<CssBaseline />
 			<AppBar appDrawerOpen={appDrawerOpen} toggleAppDrawer={setAppDrawerOpen} />
 			<AppDrawer open={appDrawerOpen} onClose={() => setAppDrawerOpen(false)} />
-			<Box flexGrow={1} paddingY={2} height="100vh">
+			<Box flexGrow={1}>
 				<Toolbar />
-				<Container className={classes.height} component="main" maxWidth="xl">
+				<Container className={classes.container} component="main" maxWidth="xl">
 					{children}
 				</Container>
 			</Box>
