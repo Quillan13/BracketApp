@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
 				easing: theme.transitions.easing.sharp,
 				duration: theme.transitions.duration.enteringScreen,
 			}),
+			background: theme.palette.secondary.main,
 		},
 		drawerClose: {
 			transition: theme.transitions.create('width', {
@@ -40,6 +41,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			[theme.breakpoints.up('sm')]: {
 				width: theme.spacing(9) + 1,
 			},
+			background: theme.palette.primary.main,
 		},
 		toolbar: {
 			display: 'flex',
@@ -47,6 +49,9 @@ const useStyles = makeStyles((theme: Theme) =>
 			justifyContent: 'flex-end',
 			padding: theme.spacing(0, 1),
 			...theme.mixins.toolbar,
+		},
+		icon: {
+			color: '#FFFFFF'
 		},
 	})
 );
@@ -79,8 +84,8 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 				{ text: 'Build A Bracket', path: "/Brackets/BracketType", icon: <BuildIcon /> },
 				{ text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
 					<ListItem component={Link} to={route.path} button key={route.text}>
-						<ListItemIcon>{route.icon}</ListItemIcon>
-						<ListItemText primary={route.text} />
+						<ListItemIcon className={classes.icon}>{route.icon}</ListItemIcon>
+						<ListItemText className={classes.icon} primary={route.text} />
 					</ListItem>
 				))}
 			</List>
