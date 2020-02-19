@@ -25,9 +25,8 @@ const useStyles = makeStyles((theme: Theme) =>
 			'@media (min-width: 600px)': {
 				minHeight: `calc(100vh - ${(theme.mixins.toolbar['@media (min-width:600px)'] as any).minHeight}px)`,
 			},
-		},
-		bgColor: {
-			background: "#E3E2E2",
+			backgroundColor: "#E3E2E2",
+
 		},
 	})
 );
@@ -37,7 +36,7 @@ const Layout: React.FC = ({ children }) => {
 	const classes = useStyles();
 
 	return (
-		<Box className={classes.bgColor} display="flex">
+		<Box display="flex">
 			<CssBaseline />
 			<AppBar appDrawerOpen={appDrawerOpen} toggleAppDrawer={setAppDrawerOpen} />
 			<AppDrawer open={appDrawerOpen} onClose={() => setAppDrawerOpen(false)} />

@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		selectGrid: {
 			height: '70px',
-			width: '100vw',
 		},
 		bracket: {
 			margin: 'auto',
