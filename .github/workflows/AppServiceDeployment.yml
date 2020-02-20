@@ -26,6 +26,7 @@ jobs:
           REACT_APP_AZURE_AD_B2C_CLIENT_ID: ${{ secrets.REACT_APP_AZURE_AD_B2C_CLIENT_ID }}
           REACT_APP_AZURE_AD_B2C_AUTHORITY: https://bracketapp.b2clogin.com/BracketApp.onmicrosoft.com/b2c_1_signin_signup/
           REACT_APP_AZURE_AD_B2C_REDIRECT_URL: https://bracketapp.azurewebsites.net/
+          REACT_APP_API_BASE_URL: https://bracket-app-api.azurewebsites.net
 
       - name: Test
         run: npm run test --if-present
