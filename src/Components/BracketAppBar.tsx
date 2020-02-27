@@ -15,6 +15,8 @@ import UserMenu from './UserMenu';
 import AuthService from 'Services/AuthService';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import { GlobalState } from 'Store';
+import UserSettings from 'Types/UserSettings';
+import UserSettingsService from 'Services/UserSettingsService';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -60,6 +62,10 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 		try {
 			const response = await AuthService.LogIn();
 			dispatch(AuthenticationActionCreators.LogIn(response));
+			
+			if (response.idTokenClaims.newUser ?? false) {
+				UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
+			}
 		} catch (error) {
 			console.error(error);
 		}
