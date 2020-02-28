@@ -3,9 +3,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { AuthenticationReducer } from './Authentication';
 import LocalStorageService from '../Services/LocalStorageService';
+import { UserSettingsReducer } from './UserSettings';
 
 const reducers = {
 	authentication: AuthenticationReducer,
+	userSettings: UserSettingsReducer,
 };
 
 const rootReducer = combineReducers(reducers);
