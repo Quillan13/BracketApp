@@ -10,7 +10,7 @@ import { makeStyles, Theme, createStyles, Divider, Typography } from '@material-
 import { GlobalState } from 'Store';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import AuthService from 'Services/AuthService';
-
+import { Redirect } from '@reach/router';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -34,6 +34,7 @@ const UserMenu: React.FC = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const menuButtonRef = useRef<HTMLButtonElement>(null);
+    const [redirectTo, setRedirectTo] = useState<string>();
 
     const openMenu = () => setMenuOpen(true);
     const closeMenu = () => setMenuOpen(false);
@@ -46,6 +47,14 @@ const UserMenu: React.FC = () => {
             console.error(error);
         }
     };
+
+    if(redirectTo !== undefined) return <Redirect to={redirectTo} />
+
+    const UserSettings = () => {
+        setRedirectTo('/UserSettings');
+    }
+
+
 
     return (
         <>
@@ -71,6 +80,11 @@ const UserMenu: React.FC = () => {
                     </Typography>
                 </MenuItem>
                 <Divider variant="middle" />
+                <MenuItem onClick={UserSettings}>
+                    <Typography align="center" variant="overline" className={classes.menuItemText}>
+                        User Settings
+					</Typography>
+                </MenuItem>
                 <MenuItem onClick={logout}>
                     <Typography align="center" variant="overline" className={classes.menuItemText}>
                         Log Out

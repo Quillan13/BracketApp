@@ -11,6 +11,7 @@ import DreamworksAnimatedFilms from 'Pages/Brackets/DreamworksAnimatedMovies';
 import Layout from 'Components/Layout';
 import PreMade from 'Pages/PreMade';
 import Home from 'Pages/Home';
+import UserSettings from 'Pages/UserSettings';
 
 const App: React.FC = () => {
 	return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
 				<Router>
 					<Home path="/" />
 					<PreMade path="PreMade" />
+					<UserSettings path="UserSettings" />
 					<Brackets path="Brackets">
 						<BracketType path="BracketType" />
 						<MM2020 path="MM2020" />
