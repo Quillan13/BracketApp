@@ -5,16 +5,12 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 import App from './App';
-import Theme from 'Theme';
 import { Store } from 'Store';
 import * as ServiceWorker from './Types/ServiceWorker';
-import { ThemeProvider } from '@material-ui/core';
 
 ReactDOM.render(
 	<Provider store={Store}>
-		<ThemeProvider theme={Theme}>
-			<App />
-		</ThemeProvider>
+		<App />
 	</Provider>,
 	document.getElementById('root')
 );
