@@ -1,6 +1,7 @@
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import Constants from 'Constants'
 
-export default function CreateTheme(primary: string, secondary: string, tertiary: string) {
+export default function createTheme(primary: string = Constants.primary, secondary: string = Constants.secondary, tertiary: string = Constants.tertiary) {
 	return createMuiTheme({
 		palette: {
 			primary: {

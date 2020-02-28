@@ -12,30 +12,37 @@ import Layout from 'Components/Layout';
 import PreMade from 'Pages/PreMade';
 import Home from 'Pages/Home';
 import UserSettings from 'Pages/UserSettings';
-import { ThemeProvider, Theme } from '@material-ui/core';
-import { useSelector } from 'react-redux';
+import { ThemeProvider } from '@material-ui/core';
+import { useSelector, useDispatch } from 'react-redux';
+import { UserSettingsActionCreators } from 'Store/UserSettings'
 import { GlobalState } from 'Store';
 import UserSettingsService from 'Services/UserSettingsService';
-import CreateTheme from 'Theme';
+import createTheme from 'Theme';
+import Constants from 'Constants'
 
 const App: React.FC = () => {
 
+	const dispatch = useDispatch();
 	const { isAuthenticated } = useSelector((state: GlobalState) => state.authentication);
-	const [Theme, setTheme] = useState(CreateTheme('#0d47a1', '#ffab40', '#66bb6a'));
+	const { userSettings } = useSelector((state: GlobalState) => state.userSettings);
+	const [theme, setTheme] = useState(createTheme(Constants.primary, Constants.secondary, Constants.tertiary));
 
 	useEffect(() => {
 		if (isAuthenticated) {
 			UserSettingsService.GetByOwnerId().then(response => {
-				setTheme(CreateTheme(response.primary, response.secondary, response.tertiary));
+				dispatch(UserSettingsActionCreators.Update(response));
 			})
 
 		};
-	}
-		, [isAuthenticated]);
+	}, [isAuthenticated]);
+
+	useEffect(() => {
+		setTheme(createTheme(userSettings?.primary, userSettings?.secondary, userSettings?.tertiary));
+	}, [userSettings]);
 
 	return (
 		<>
-			<ThemeProvider theme={Theme}>
+			<ThemeProvider theme={theme}>
 				<Layout>
 					<Router>
 						<Home path="/" />
