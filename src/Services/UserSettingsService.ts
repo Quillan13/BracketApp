@@ -19,6 +19,12 @@ class UserSettingsService extends ApiService<UserSettings> {
 
         return plainToClass(this.classType, response.data);
     }
+
+    // public async Update(): Promise<void> {
+    //     const response = await Axios.put<UserSettings>(this.url, {
+    //         headers: await this.GetHeaders(),
+    //     });
+    // }
 }
 
 export default new UserSettingsService();
