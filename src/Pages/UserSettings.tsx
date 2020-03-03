@@ -19,9 +19,14 @@ const UserSettings: Page = () => {
 	const [tertiary, setTertiary] = useState(userSettings?.tertiary ?? Constants.tertiary);
 
 	function handleClick() {
-		UserSettingsService.GetByOwnerId().then(response => {
-			dispatch(UserSettingsActionCreators.Update(response));
-		})
+		if (userSettings !== undefined) {
+			userSettings.primary = primary;
+			userSettings.secondary = secondary;
+			userSettings.tertiary = tertiary;
+			UserSettingsService.Update(userSettings).then(response => {
+				dispatch(UserSettingsActionCreators.Update(response));
+			})
+		}
 	}
 
 	return (
