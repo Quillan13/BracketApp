@@ -10,7 +10,7 @@ export function UserSettingsReducer(
 			return {
 				...state,
 
-				userSettings: action.userSettings,
+				userSettings: action.userSettings !== undefined ? { ...action.userSettings } : undefined,
 			};
 
 		default:
