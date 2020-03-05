@@ -38,6 +38,7 @@ const App: React.FC = () => {
 
 	useEffect(() => {
 		setTheme(createTheme(userSettings?.primary, userSettings?.secondary, userSettings?.tertiary));
+		console.log("setTheme");
 	}, [userSettings]);
 
 	return (
