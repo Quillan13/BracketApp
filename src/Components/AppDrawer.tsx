@@ -14,7 +14,10 @@ import BuildIcon from '@material-ui/icons/Build';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import CollectionsIcon from '@material-ui/icons/Collections';
+import CollectionsBookmarkIcon from '@material-ui/icons/CollectionsBookmark';
 import { Link } from '@reach/router';
+import { useSelector } from 'react-redux';
+import { GlobalState } from 'Store';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -59,6 +62,8 @@ const useStyles = makeStyles((theme: Theme) =>
 const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 	const theme = useTheme();
 	const classes = useStyles();
+	const isAuthenticated = useSelector((state: GlobalState) => state.authentication.isAuthenticated);
+
 
 	return (
 		<Drawer
@@ -90,6 +95,16 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 				))}
 			</List>
 			<Divider />
+			{isAuthenticated && <List>
+				{[{ text: 'My Collections', path: "/MyCollections", icon: <CollectionsBookmarkIcon /> }].map((route, index) => (
+					<ListItem component={Link} to={route.path} button key={route.text}>
+						<ListItemIcon className={classes.icon}>{route.icon}</ListItemIcon>
+						<ListItemText className={classes.icon} primary={route.text} />
+					</ListItem>
+				))}
+			</List>}
+			< Divider />
+
 		</Drawer>
 	);
 };

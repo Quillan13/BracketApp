@@ -3,7 +3,8 @@ import { Router } from '@reach/router';
 
 import MM2020 from 'Pages/Brackets/MM2020'
 import Brackets from 'Pages/Brackets';
-import BracketType from 'Pages/Brackets/BracketType'
+import BracketType from 'Pages/Brackets/BracketType';
+import MyCollections from 'Pages/MyCollections';
 import SingleCustomBracket from 'Pages/Brackets/SingleCustomBracket';
 import DoubleCustomBracket from 'Pages/Brackets/DoubleCustomBracket';
 import DisneyAnimatedMovies from 'Pages/Brackets/DisneyAnimatedMovies';
@@ -48,6 +49,7 @@ const App: React.FC = () => {
 						<Home path="/" />
 						<PreMade path="PreMade" />
 						<UserSettings path="UserSettings" />
+						<MyCollections path="MyCollections" />
 						<Brackets path="Brackets">
 							<BracketType path="BracketType" />
 							<MM2020 path="MM2020" />
