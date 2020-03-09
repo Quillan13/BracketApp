@@ -33,9 +33,8 @@ const App: React.FC = () => {
 			UserSettingsService.GetByOwnerId().then(response => {
 				dispatch(UserSettingsActionCreators.Update(response));
 			})
-
-		};
-	}, [isAuthenticated]);
+		}
+	}, [isAuthenticated, dispatch]);
 
 	useEffect(() => {
 		setTheme(createTheme(userSettings?.primary, userSettings?.secondary, userSettings?.tertiary));
