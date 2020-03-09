@@ -61,11 +61,10 @@ const App: React.FC = () => {
 							</Brackets>
 						</Router>
 					}
-					{!isAuthenticated &&
-						<Router>
-							<Home path="/" />
-						</Router>
-					}
+					<Router>
+						<Home path="/" />
+					</Router>
+
 
 				</Layout>
 			</ThemeProvider>

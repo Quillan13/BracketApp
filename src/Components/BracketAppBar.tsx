@@ -63,14 +63,15 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 			const response = await AuthService.LogIn();
 			dispatch(AuthenticationActionCreators.LogIn(response));
 
-
-			// if (await UserSettingsService.GetByOwnerId() == null) {
-			// 	UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
-
-			// }
-			if (response.idTokenClaims.newUser ?? false) {
-				UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
+			try {
+				await UserSettingsService.GetByOwnerId()
+			} catch (error) {
+				console.log(error);
+				await UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
 			}
+			// if (response.idTokenClaims.newUser ?? false) {
+			// 	UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
+			// }
 		} catch (error) {
 			console.error(error);
 		}
