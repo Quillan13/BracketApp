@@ -33,9 +33,8 @@ const App: React.FC = () => {
 			UserSettingsService.GetByOwnerId().then(response => {
 				dispatch(UserSettingsActionCreators.Update(response));
 			})
-
-		};
-	}, [isAuthenticated]);
+		}
+	}, [isAuthenticated, dispatch]);
 
 	useEffect(() => {
 		setTheme(createTheme(userSettings?.primary, userSettings?.secondary, userSettings?.tertiary));
@@ -61,11 +60,10 @@ const App: React.FC = () => {
 							</Brackets>
 						</Router>
 					}
-					{!isAuthenticated &&
-						<Router>
-							<Home path="/" />
-						</Router>
-					}
+					<Router>
+						<Home path="/" />
+					</Router>
+
 
 				</Layout>
 			</ThemeProvider>
