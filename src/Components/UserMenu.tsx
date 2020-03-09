@@ -11,6 +11,9 @@ import { GlobalState } from 'Store';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import AuthService from 'Services/AuthService';
 import { Link, Redirect } from '@reach/router';
+import UserSettingsService from 'Services/UserSettingsService';
+import { UserSettingsActionCreators } from 'Store/UserSettings';
+import Constants from 'Constants';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -42,6 +45,8 @@ const UserMenu: React.FC = () => {
         try {
             AuthService.LogOut();
             dispatch(AuthenticationActionCreators.LogOut());
+            dispatch(UserSettingsActionCreators.Update(undefined));
+
         } catch (error) {
             console.error(error);
         }
