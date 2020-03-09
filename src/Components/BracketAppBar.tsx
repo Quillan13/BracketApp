@@ -64,13 +64,13 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 			dispatch(AuthenticationActionCreators.LogIn(response));
 
 
-			if (await UserSettingsService.GetByOwnerId() == null) {
-				UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
-
-			}
-			// if (response.idTokenClaims.newUser ?? false) {
+			// if (await UserSettingsService.GetByOwnerId() == null) {
 			// 	UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
+
 			// }
+			if (response.idTokenClaims.newUser ?? false) {
+				UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
+			}
 		} catch (error) {
 			console.error(error);
 		}

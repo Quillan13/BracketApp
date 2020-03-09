@@ -45,24 +45,28 @@ const App: React.FC = () => {
 		<>
 			<ThemeProvider theme={theme}>
 				<Layout>
-					<Router>
-						<Home path="/" />
-						{/* {isAuthenticated &&
-							<> */}
-						<PreMade path="PreMade" />
-						<UserSettings path="UserSettings" />
-						<MyCollections path="MyCollections" />
-						<Brackets path="Brackets">
-							<BracketType path="BracketType" />
-							<MM2020 path="MM2020" />
-							<SingleCustomBracket path="SingleCustom" />
-							<DoubleCustomBracket path="DoubleCustom" />
-							<DisneyAnimatedMovies path="DisneyAnimated" />
-							<DreamworksAnimatedFilms path="DreamworksAnimated" />
-						</Brackets>
-						{/* </>
-						} */}
-					</Router>
+					{isAuthenticated &&
+						<Router>
+							<Home path="/" />
+							<PreMade path="PreMade" />
+							<UserSettings path="UserSettings" />
+							<MyCollections path="MyCollections" />
+							<Brackets path="Brackets">
+								<BracketType path="BracketType" />
+								<MM2020 path="MM2020" />
+								<SingleCustomBracket path="SingleCustom" />
+								<DoubleCustomBracket path="DoubleCustom" />
+								<DisneyAnimatedMovies path="DisneyAnimated" />
+								<DreamworksAnimatedFilms path="DreamworksAnimated" />
+							</Brackets>
+						</Router>
+					}
+					{!isAuthenticated &&
+						<Router>
+							<Home path="/" />
+						</Router>
+					}
+
 				</Layout>
 			</ThemeProvider>
 		</>

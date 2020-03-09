@@ -10,7 +10,7 @@ import { makeStyles, Theme, createStyles, Divider, Typography } from '@material-
 import { GlobalState } from 'Store';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import AuthService from 'Services/AuthService';
-import { Link } from '@reach/router';
+import { Link, Redirect } from '@reach/router';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
