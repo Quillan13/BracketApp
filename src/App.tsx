@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import MM2020 from 'Pages/Brackets/MM2020'
 import BracketType from 'Pages/Brackets/BracketType';
 import MyCollections from 'Pages/MyCollections';
@@ -25,11 +25,13 @@ const App: React.FC = () => {
 	const { isAuthenticated } = useSelector((state: GlobalState) => state.authentication);
 	const { userSettings } = useSelector((state: GlobalState) => state.userSettings);
 	const [theme, setTheme] = useState(createTheme(Constants.primary, Constants.secondary, Constants.tertiary));
+	const [redirectTo, setRedirectTo] = useState<string>();
 
 	useEffect(() => {
 		if (isAuthenticated) {
 			UserSettingsService.GetByOwnerId().then(response => {
 				dispatch(UserSettingsActionCreators.Update(response));
+				setRedirectTo("/");
 			})
 		}
 	}, [isAuthenticated, dispatch]);
@@ -37,6 +39,9 @@ const App: React.FC = () => {
 	useEffect(() => {
 		setTheme(createTheme(userSettings?.primary, userSettings?.secondary, userSettings?.tertiary));
 	}, [userSettings]);
+
+	if (redirectTo !== undefined)
+		return <Redirect to={redirectTo} />
 
 	return (
 		<Router>
