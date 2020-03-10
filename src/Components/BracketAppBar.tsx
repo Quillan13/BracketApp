@@ -62,7 +62,6 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 		try {
 			const response = await AuthService.LogIn();
 			dispatch(AuthenticationActionCreators.LogIn(response));
-
 			try {
 				await UserSettingsService.GetByOwnerId()
 			} catch (error) {
