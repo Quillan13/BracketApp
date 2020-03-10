@@ -69,14 +69,10 @@ const AppBar: React.FC<AppBarProps> = ({ appDrawerOpen, toggleAppDrawer }) => {
 				console.log(error);
 				await UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
 			}
-			// if (response.idTokenClaims.newUser ?? false) {
-			// 	UserSettingsService.Create(new UserSettings('#0d47a1', '#ffab40', '#66bb6a'));
-			// }
 		} catch (error) {
 			console.error(error);
 		}
 	};
-
 
 	return (
 		<MuiAppBar position="fixed" className={clsx(classes.appBar, { [classes.appBarShift]: appDrawerOpen })}>

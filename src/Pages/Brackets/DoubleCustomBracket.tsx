@@ -3,9 +3,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-
 import { makeStyles, Theme, createStyles, createMuiTheme, Box, Grid } from '@material-ui/core';
-import Page from 'Types/Page';
 import MakeDouble from 'Components/Inputs/MakeDouble';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -31,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
     })
 );
 
-const DoubleCustomBracket: Page = () => {
+const DoubleCustomBracket = () => {
     const classes = useStyles(createMuiTheme());
 
     const inputLabel = React.useRef<HTMLLabelElement>(null);

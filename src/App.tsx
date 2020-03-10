@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Router } from '@reach/router';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MM2020 from 'Pages/Brackets/MM2020'
-import Brackets from 'Pages/Brackets';
 import BracketType from 'Pages/Brackets/BracketType';
 import MyCollections from 'Pages/MyCollections';
 import SingleCustomBracket from 'Pages/Brackets/SingleCustomBracket';
@@ -41,35 +39,57 @@ const App: React.FC = () => {
 	}, [userSettings]);
 
 	return (
-		<>
+		<Router>
 			<ThemeProvider theme={theme}>
 				<Layout>
 					{isAuthenticated &&
-						<Router>
-							<Home path="/" />
-							<PreMade path="PreMade" />
-							<UserSettings path="UserSettings" />
-							<MyCollections path="MyCollections" />
-							<Brackets path="Brackets">
-								<BracketType path="BracketType" />
-								<MM2020 path="MM2020" />
-								<SingleCustomBracket path="SingleCustom" />
-								<DoubleCustomBracket path="DoubleCustom" />
-								<DisneyAnimatedMovies path="DisneyAnimated" />
-								<DreamworksAnimatedFilms path="DreamworksAnimated" />
-							</Brackets>
-						</Router>
+						<Switch>
+							<Route exact path="/">
+								<Home />
+							</Route>
+							<Route path="/PreMade">
+								<PreMade />
+							</Route>
+							<Route path="/UserSettings">
+								<UserSettings />
+							</Route>
+							<Route path="/MyCollections">
+								<MyCollections />
+							</Route>
+							<Route path="/Brackets">
+								<Route path="/Brackets/BracketType" >
+									<BracketType />
+								</Route>
+								<Route path="/Brackets/MM2020">
+									<MM2020 />
+								</Route>
+								<Route path="/Brackets/SingleCustom">
+									<SingleCustomBracket />
+								</Route>
+								<Route path="/Brackets/DoubleCustom">
+									<DoubleCustomBracket />
+								</Route>
+								<Route path="/Brackets/DisneyAnimated">
+									<DisneyAnimatedMovies />
+								</Route>
+								<Route path="/Brackets/DreamworksAnimated">
+									<DreamworksAnimatedFilms />
+								</Route>
+							</Route>
+						</Switch>
 					}
 					{!isAuthenticated &&
-					<Router>
-						<Home path="/" />
-					</Router>
+						<Router>
+							<Switch>
+								<Route path="/">
+									<Home />
+								</Route>
+							</Switch>
+						</Router>
 					}
-
-
 				</Layout>
 			</ThemeProvider>
-		</>
+		</Router>
 	);
 };
 

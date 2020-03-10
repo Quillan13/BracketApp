@@ -1,17 +1,15 @@
 import React, { useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-
 import Menu from '@material-ui/core/Menu';
 import Button from '@material-ui/core/Button';
 import MenuItem from '@material-ui/core/MenuItem';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { makeStyles, Theme, createStyles, Divider, Typography } from '@material-ui/core';
-
 import { GlobalState } from 'Store';
 import { AuthenticationActionCreators } from 'Store/Authentication';
 import AuthService from 'Services/AuthService';
-import { Link } from '@reach/router';
 import { UserSettingsActionCreators } from 'Store/UserSettings';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({

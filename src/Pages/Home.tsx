@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Page from 'Types/Page';
 import { Button, makeStyles, Theme, createStyles, Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -25,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const Home: Page = () => {
+const Home = () => {
 	const classes = useStyles();
 
 	return (

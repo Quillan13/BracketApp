@@ -15,9 +15,9 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import CollectionsIcon from '@material-ui/icons/Collections';
 import CollectionsBookmarkIcon from '@material-ui/icons/CollectionsBookmark';
-import { Link } from '@reach/router';
 import { useSelector } from 'react-redux';
 import { GlobalState } from 'Store';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({

@@ -1,8 +1,6 @@
 import React from 'react';
-import Page from '../Types/Page';
 
-
-const MyCollections: Page = () => {
+const MyCollections = () => {
     return (
         <>
             API Call to get List of MyCollections
