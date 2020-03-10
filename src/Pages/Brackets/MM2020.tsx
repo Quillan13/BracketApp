@@ -1,8 +1,6 @@
 import React from 'react';
-import Page from '../../Types/Page';
 
-
-const MM2020: Page = () => {
+const MM2020 = () => {
     return (
         <>
             March Madness 2002

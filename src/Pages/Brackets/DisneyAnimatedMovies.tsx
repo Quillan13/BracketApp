@@ -5,7 +5,6 @@ import SemiFinal from 'Components/SemiFinal';
 import Championship from 'Components/Championship';
 import Bracket from 'Data/DisneyAnimatedFilms';
 import { makeStyles, Theme, createStyles, createMuiTheme, Grid } from '@material-ui/core';
-import Page from 'Types/Page';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
@@ -30,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const DisneyAnimatedMovies: Page = () => {
+const DisneyAnimatedMovies = () => {
 	function handleChamp1() {
 		if ((winners[125] ?? "") !== "" && (winners[126] ?? "") !== "") {
 			setLeft('green');

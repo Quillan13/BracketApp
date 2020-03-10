@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import ColorPicker from 'material-ui-color-picker'
-
-import Page from 'Types/Page';
 import { useSelector, useDispatch } from 'react-redux';
 import { GlobalState } from 'Store';
 import Constants from 'Constants'
@@ -9,7 +7,7 @@ import UserSettingsService from 'Services/UserSettingsService';
 import { UserSettingsActionCreators } from 'Store/UserSettings';
 
 
-const UserSettings: Page = () => {
+const UserSettings = () => {
 
 	const dispatch = useDispatch();
 	const { userSettings } = useSelector((state: GlobalState) => state.userSettings);

@@ -1,10 +1,7 @@
 import React from 'react';
-
 import Button from '@material-ui/core/Button';
 
-import Page from '../../Types/Page'
-
-const BracketType: Page = () => {
+const BracketType = () => {
     return (
         <>
             <Button href="/Brackets/SingleCustom">Single Elimination</Button>
