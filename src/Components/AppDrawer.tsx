@@ -87,6 +87,7 @@ const AppDrawer: React.FC<AppDrawerProps> = ({ open, onClose }) => {
 			<List>
 				{[{ text: 'Home', path: "/", icon: <HomeIcon /> },
 				{ text: 'Build A Bracket', path: "/Brackets/BracketType", icon: <BuildIcon /> },
+				{ text: 'Mario Kart', path: "/MarioKart", icon: <BuildIcon /> },
 				{ text: 'Pre Built Brackets', path: "/PreMade", icon: <CollectionsIcon /> }].map((route, index) => (
 					<ListItem component={Link} to={route.path} button key={route.text}>
 						<ListItemIcon className={classes.icon}>{route.icon}</ListItemIcon>
