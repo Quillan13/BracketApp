@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import MM2020 from 'Pages/Brackets/MM2020'
 import BracketType from 'Pages/Brackets/BracketType';
+import MarioKart from 'Pages/MarioKart';
 import MyCollections from 'Pages/MyCollections';
 import SingleCustomBracket from 'Pages/Brackets/SingleCustomBracket';
 import DoubleCustomBracket from 'Pages/Brackets/DoubleCustomBracket';
@@ -57,6 +58,9 @@ const App: React.FC = () => {
 							</Route>
 							<Route path="/UserSettings">
 								<UserSettings />
+							</Route>
+							<Route path="/MarioKart">
+								<MarioKart />
 							</Route>
 							<Route path="/MyCollections">
 								<MyCollections />
