@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MM2020 from 'Pages/Brackets/MM2020'
 import BracketType from 'Pages/Brackets/BracketType';
 import MarioKart from 'Pages/MarioKart';
