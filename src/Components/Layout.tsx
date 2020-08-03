@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-const Layout: React.FC = ({ children }) => {
+const Layout: React.FC = ({ children }:any) => {
 	const [appDrawerOpen, setAppDrawerOpen] = useState(false);
 	const classes = useStyles();
 

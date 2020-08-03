@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ColorPicker from 'material-ui-color-picker'
+import ColorPicker from 'material-ui-color-picker';
 import { useSelector, useDispatch } from 'react-redux';
 import { GlobalState } from 'Store';
 import Constants from 'Constants'
